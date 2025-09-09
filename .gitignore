@@ -50,10 +50,6 @@ __pycache__/
 *.pyc
 
 # Database (Best practice is to ignore the database and its temp files)
-*.db
-*.db-journal
-*.db-wal
-*.db-shm
 
 # Editor & IDE specific files
 .vscode/
