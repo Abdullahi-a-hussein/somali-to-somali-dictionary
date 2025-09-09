@@ -4,17 +4,23 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from rapidfuzz import process, fuzz
 import json
+import os
 
-# --- Configuration ---
-DATABASE_FILE = 'qaamuus.db'
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
+# --- Configuration (Read from Environment Variables) ---
+# This makes the app configurable without changing the code.
+# Render will set these variables in its dashboard.
+DATABASE_FILE = os.getenv('DATABASE_FILE', 'qaamuus.db')
+REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
+FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:3000')
+
 
 # --- FastAPI App Initialization ---
 app = FastAPI()
 
 # Allow frontend to access backend
+# In production, this will be your Vercel app's URL.
 origins = [
+    FRONTEND_URL,
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
@@ -28,10 +34,10 @@ app.add_middleware(
 )
 
 # --- Redis Connection ---
-# Use decode_responses=True to get strings back from Redis instead of bytes
+# The redis-py library can connect directly using a URL.
+# This is the standard way hosting providers like Render supply credentials.
 try:
-    redis_client = redis.Redis(
-        host=REDIS_HOST, port=REDIS_PORT, db=0, decode_responses=True)
+    redis_client = redis.from_url(REDIS_URL, decode_responses=True)
     redis_client.ping()
     print("Successfully connected to Redis.")
 except redis.exceptions.ConnectionError as e:
@@ -58,6 +64,7 @@ def suggest(prefix: str):
         cursor = conn.cursor()
 
         # 1. Standard Prefix Search
+        # CORRECTED: The table name is 'qaamuus' based on our loading script.
         cursor.execute(
             "SELECT headword, definition FROM qaamuus WHERE headword LIKE ? ORDER BY headword LIMIT 10",
             (prefix_lower + '%',)
@@ -116,6 +123,7 @@ def define(word: str):
     try:
         conn = sqlite3.connect(DATABASE_FILE)
         cursor = conn.cursor()
+        # CORRECTED: The table name is 'qaamuus'
         cursor.execute(
             "SELECT headword, definition FROM qaamuus WHERE headword = ?", (word_lower,))
         result = cursor.fetchone()
