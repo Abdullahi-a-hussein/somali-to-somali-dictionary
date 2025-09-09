@@ -1,8 +1,6 @@
 import Autocomplete from "./components/Autocomplete";
 
 export default function Home() {
-  const API_URL = "https://somali-to-somali-dictionary.onrender.com"; // your FastAPI backend
-
   return (
     // ACCESSIBILITY: Use the <main> tag for the primary content of the page.
     // Also, declare the primary language of the page as Somali ("so").
@@ -14,7 +12,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Qaamuuska Soomaaliga
         </h1>
-        <Autocomplete apiUrl={API_URL} />
+        <Autocomplete />
       </div>
     </main>
   );

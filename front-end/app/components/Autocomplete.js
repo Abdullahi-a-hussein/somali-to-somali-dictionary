@@ -1,37 +1,30 @@
-"use client";
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 
-export default function Autocomplete({ apiUrl }) {
+// Use an environment variable for the API URL.
+// In Next.js, variables must start with NEXT_PUBLIC_ to be available in the browser.
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+export default function Autocomplete() {
   const [query, setQuery] = useState("");
-  // suggestions will be an array of arrays: [[headword, definition], ...]
   const [suggestions, setSuggestions] = useState([]);
-  // A single state to hold the fully selected word and its definition
   const [selectedWord, setSelectedWord] = useState(null);
-  const [highlight, setHighlight] = useState(-1);
   const [isListboxOpen, setIsListboxOpen] = useState(false);
+  const [highlight, setHighlight] = useState(-1);
 
-  // Fetches suggestions from the API as the user types.
   useEffect(() => {
-    // Prevent fetching suggestions if the query already matches the selected word.
-    if (
-      selectedWord &&
-      query.trim().toLowerCase() === selectedWord.headword.toLowerCase()
-    ) {
-      setIsListboxOpen(false);
-      return;
-    }
-
-    if (!query.trim()) {
+    // Don't fetch if the query is empty or if it matches the currently selected word
+    if (!query || (selectedWord && query === selectedWord[0])) {
       setSuggestions([]);
       setIsListboxOpen(false);
       return;
     }
+
     const controller = new AbortController();
     const { signal } = controller;
 
     const debounceTimer = setTimeout(async () => {
       try {
-        const res = await fetch(`${apiUrl}/suggest/${query}`, { signal });
+        const res = await fetch(`${API_URL}/suggest/${query}`, { signal });
         if (!res.ok) throw new Error("Network response was not ok");
         const data = await res.json();
         setSuggestions(data);
@@ -42,25 +35,22 @@ export default function Autocomplete({ apiUrl }) {
           console.error("Suggestion fetch failed:", err);
         }
       }
-    }, 250); // Debounce to prevent API calls on every keystroke
+    }, 250);
 
     return () => {
       clearTimeout(debounceTimer);
-      controller.abort(); // Cancel the request if the component unmounts or query changes
+      controller.abort();
     };
-  }, [query, apiUrl, selectedWord]);
+  }, [query, selectedWord]);
 
-  // Sets the selected word and its definition when a user chooses from the list.
-  const handleSelect = useCallback((suggestion) => {
-    // suggestion is an array: [headword, definition]
-    const [headword, definition] = suggestion;
-    setQuery(headword); // Update input field to show the selected word
-    setSelectedWord({ headword, definition });
+  const handleSelect = useCallback((wordData) => {
+    // wordData is now an array: [headword, definition]
+    setQuery(wordData[0]);
+    setSelectedWord(wordData);
     setSuggestions([]);
     setIsListboxOpen(false);
   }, []);
 
-  // Handles keyboard navigation within the suggestions list.
   const handleKeyDown = (e) => {
     if (!isListboxOpen || suggestions.length === 0) return;
 
@@ -73,7 +63,6 @@ export default function Autocomplete({ apiUrl }) {
         (prev) => (prev - 1 + suggestions.length) % suggestions.length
       );
     } else if (e.key === "Enter" && highlight >= 0) {
-      e.preventDefault();
       handleSelect(suggestions[highlight]);
     } else if (e.key === "Escape") {
       setIsListboxOpen(false);
@@ -81,13 +70,11 @@ export default function Autocomplete({ apiUrl }) {
   };
 
   return (
-    // Main container is now vertically aligned, wider, and centered.
-    <div className="w-full max-w-2xl mx-auto p-4 flex flex-col gap-4">
-      {/* Search input and suggestions dropdown */}
+    <div className="w-full max-w-xl mx-auto font-sans">
       <div className="relative">
         <input
           type="text"
-          className="border p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+          className="border p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg shadow-sm"
           placeholder="Raadi erey..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -100,43 +87,42 @@ export default function Autocomplete({ apiUrl }) {
             highlight >= 0 ? `suggestion-${highlight}` : undefined
           }
         />
-
         {isListboxOpen && (
           <ul
-            className="absolute z-10 w-full border mt-1 rounded bg-white shadow-lg"
+            className="absolute z-10 w-full border mt-1 rounded-md bg-white shadow-lg"
             role="listbox"
             id="suggestions-listbox"
           >
-            {suggestions.map((suggestion, i) => (
+            {suggestions.map((wordData, i) => (
               <li
                 key={i}
                 id={`suggestion-${i}`}
                 role="option"
                 aria-selected={i === highlight}
-                className={`p-2 cursor-pointer ${
-                  i === highlight ? "bg-blue-600 text-white" : "text-gray-900"
+                className={`p-3 cursor-pointer text-gray-900 hover:bg-blue-500 hover:text-white ${
+                  i === highlight ? "bg-blue-600 text-white" : ""
                 }`}
-                // Use onMouseDown to prevent the input from losing focus before the click registers
-                onMouseDown={() => handleSelect(suggestion)}
+                onMouseDown={() => handleSelect(wordData)}
               >
-                {suggestion[0]} {/* Display only the headword in the list */}
+                {wordData[0]}
               </li>
             ))}
           </ul>
         )}
       </div>
 
-      {/* Definition display area */}
-      <div className="p-4 border rounded bg-gray-50 shadow-sm min-h-[150px]">
+      <div className="mt-6 p-6 border rounded-lg bg-white shadow-sm min-h-[150px]">
         {selectedWord ? (
           <div>
-            <h2 className="font-bold text-2xl text-gray-900">
-              {selectedWord.headword}
+            <h2 className="font-bold text-2xl text-gray-800">
+              {selectedWord[0]}
             </h2>
-            <p className="text-gray-700 mt-2">{selectedWord.definition}</p>
+            <p className="text-gray-700 mt-2 text-lg">{selectedWord[1]}</p>
           </div>
         ) : (
-          <p className="text-gray-400">Select a word to see its definition.</p>
+          <p className="text-gray-400">
+            Erayga aad raadisay halkan ayuu ku soo baxayaa.
+          </p>
         )}
       </div>
     </div>
