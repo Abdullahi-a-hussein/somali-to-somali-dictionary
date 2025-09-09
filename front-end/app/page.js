@@ -1,7 +1,7 @@
 import Autocomplete from "./components/Autocomplete";
 
 export default function Home() {
-  const API_URL = "http://127.0.0.1:8000"; // your FastAPI backend
+  const API_URL = "https://somali-to-somali-dictionary.onrender.com"; // your FastAPI backend
 
   return (
     // ACCESSIBILITY: Use the <main> tag for the primary content of the page.

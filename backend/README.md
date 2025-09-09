@@ -6,11 +6,10 @@ This backend is configured for deployment on a hosting service like Render.
 
 To run this application, you will need to set the following environment variables in your hosting provider's dashboard:
 
-| Variable        | Description                                                           | Example Value (Render)             |
-| --------------- | --------------------------------------------------------------------- | ---------------------------------- |
-| `DATABASE_FILE` | The absolute path to the SQLite database file on the persistent disk. | `/var/data/qaamuus.db`             |
-| `REDIS_URL`     | The connection string for your Redis instance, provided by Render.    | `redis://red-....`                 |
-| `FRONTEND_URL`  | The full URL of your deployed frontend application (from Vercel).     | `https://your-app-name.vercel.app` |
+| Variable       | Description                                                        | Example Value (Render)             |
+| -------------- | ------------------------------------------------------------------ | ---------------------------------- |
+| `REDIS_URL`    | The connection string for your Redis instance, provided by Render. | `redis://red-....`                 |
+| `FRONTEND_URL` | The full URL of your deployed frontend application (from Vercel).  | `https://your-app-name.vercel.app` |
 
 ## Render Configuration
 
