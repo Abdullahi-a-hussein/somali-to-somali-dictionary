@@ -12,7 +12,7 @@ import os
 DATABASE_FILE = os.getenv('DATABASE_FILE', 'qaamuus.db')
 REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
 FRONTEND_URL = os.getenv(
-    'FRONTEND_URL', 'http://somali-to-somali-dictionary.vercel.app/')
+    'FRONTEND_URL', 'http://localhost:3000/')
 
 
 # --- FastAPI App Initialization ---
@@ -22,8 +22,8 @@ app = FastAPI()
 # In production, this will be your Vercel app's URL.
 origins = [
     FRONTEND_URL,
-    "http://somali-to-somali-dictionary.vercel.app/",
     "http://127.0.0.1:3000",
+    "http://localhost:3000"
 ]
 
 app.add_middleware(
