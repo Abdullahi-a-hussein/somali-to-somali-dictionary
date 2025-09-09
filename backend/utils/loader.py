@@ -1,7 +1,6 @@
 import sqlite3
 import csv
 import os
-import string
 
 DB_FILE = "qaamuus.db"
 TABLE_NAME = "qaamuus"
