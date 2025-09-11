@@ -43,6 +43,7 @@ next-env.d.ts
 # local data and virtual environments
 venv/
 words/
+corrected_words/
 *.csv
 
 # Python cache

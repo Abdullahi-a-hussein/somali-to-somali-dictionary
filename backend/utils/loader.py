@@ -4,7 +4,7 @@ import os
 
 DB_FILE = "qaamuus.db"
 TABLE_NAME = "qaamuus"
-PATHS = [f"words/{entry}" for entry in os.listdir("words")]
+PATHS = [f"corrected_words/{entry}" for entry in os.listdir("words")]
 PATHS.sort()
 
 
