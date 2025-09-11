@@ -24,14 +24,24 @@ def match_words(read_file_path: str, write_file_path: str) -> None:
         reader = csv.reader(file)
         next(reader)
         for row in reader:
-            if not (PATTERN.search(row[0])):
+            headword, definition = "", ""
+            if container:
+                headword, definition = container[-1]
+            if not (row[0][-1] in "¹²³⁴⁵⁶⁷⁸⁹⁰") and not (row[0][-1].isnumeric()) and headword.strip().lower() != row[0].strip().lower():
                 container.append(row)
-            else:
-                if container and row[0][:-1].lower().strip() == container[-1][0].lower().strip():
-                    container[-1][1] += " " + row[0] + " " + row[1]
-                elif not container:
-                    new_headword = [row[0][:-1], row[1]]
-                    container.append(new_headword)
+            elif container and headword.strip().lower() == row[0].strip().lower():
+                definition = f"{definition} {row[0]}: {row[1]}"
+                container[-1][1] = definition
+            elif container and row[0][-1].isnumeric():
+                if headword.strip().lower() == row[0][:-1].strip().lower():
+                    definition = f"{definition} {row[0][:-1]}: {row[1]}"
+                    container[-1][1] = definition
+                else:
+                    container.append([row[0][:-1], row[1]])
+
+            elif not container:
+                new_headword = [row[0][:-1], row[1]]
+                container.append(new_headword)
     print(f"Started Writing to {write_file_path}")
     with open(write_file_path, mode='w', encoding="utf-8") as file:
         writer = csv.writer(file)
