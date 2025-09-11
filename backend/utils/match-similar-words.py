@@ -30,11 +30,11 @@ def match_words(read_file_path: str, write_file_path: str) -> None:
             if not (row[0][-1] in "¹²³⁴⁵⁶⁷⁸⁹⁰") and not (row[0][-1].isnumeric()) and headword.strip().lower() != row[0].strip().lower():
                 container.append(row)
             elif container and headword.strip().lower() == row[0].strip().lower():
-                definition = f"{definition} {row[0]}: {row[1]}"
+                definition = f"{definition} \n\n{row[0]}: {row[1]}"
                 container[-1][1] = definition
             elif container and row[0][-1].isnumeric():
                 if headword.strip().lower() == row[0][:-1].strip().lower():
-                    definition = f"{definition} {row[0][:-1]}: {row[1]}"
+                    definition = f"{definition} \n\n{row[0][:-1]}: {row[1]}"
                     container[-1][1] = definition
                 else:
                     container.append([row[0][:-1], row[1]])
