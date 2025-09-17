@@ -13,6 +13,23 @@ export default function Autocomplete() {
   const [isListboxOpen, setIsListboxOpen] = useState(false);
   const [highlight, setHighlight] = useState(-1);
 
+  function customSplit(word, text) {
+    // Step 1: Replace " 1. " with a space
+    text = text.replace(/\s1\.\s/g, " ");
+
+    // Step 2: Pattern for either "{number}. " (2–99) or "{word}: "
+    // No leading space required before word:
+    const pattern = new RegExp(`(?: [2-9]\\d?\\. |${word}: )`, "g");
+
+    // Step 3: Split text on the pattern
+    let parts = text.split(pattern);
+
+    // Step 4: Clean up whitespace and empties
+    let substrings = parts.map((p) => p.trim()).filter((p) => p.length > 0);
+
+    return substrings;
+  }
+
   useEffect(() => {
     // Don't fetch if the query is empty or if it matches the currently selected word
     if (!query || (selectedWord && query === selectedWord[0])) {
@@ -119,7 +136,23 @@ export default function Autocomplete() {
             <h2 className="font-bold text-2xl text-gray-800">
               {selectedWord[0]}
             </h2>
-            <p className="text-gray-700 mt-2 text-lg">{selectedWord[1]}</p>
+            <div>
+              {customSplit(selectedWord[0], selectedWord[1]).map(
+                (word, idx) => (
+                  <div className="mt-5">
+                    <p className="text-gray-700 text-lg">
+                      {customSplit(selectedWord[0], selectedWord[1]).length >
+                        1 && (
+                        <span className="font-semibold text-gray-900 pr-2 h-full">
+                          {idx + 1}
+                        </span>
+                      )}{" "}
+                      <span className="pl-2">{word}</span>
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
           </div>
         ) : (
           <p className="text-gray-400">

@@ -2,7 +2,7 @@
 import csv
 import re
 import os
-PATTERN = re.compile("[¹²³⁴⁵⁶⁷⁸⁹⁰]$")
+# PATTERN = re.compile("[¹²³⁴⁵⁶⁷⁸⁹⁰]$")
 WORDS_PATH = "words"
 CORRECTED_WORDS = "corrected_words"
 
