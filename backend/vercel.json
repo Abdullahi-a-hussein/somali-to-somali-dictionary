@@ -8,7 +8,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
+      "dest": "main.py",
+      "methods": ["GET"],
+      "headers": {
+        "Access-Control-Allow-Origin": "https://somali-to-somali-dictionary.vercel.app"
+      }
     }
   ]
 }
