@@ -139,21 +139,18 @@ export default function Autocomplete() {
             <div className="font-sans tracking-wider">
               {customSplit(selectedWord[0], selectedWord[1]).map(
                 (word, idx) => (
-                  <div className="mt-5" key={idx}>
-                    <p className="text-gray-700 text-lg">
+                  <div className="mt-4" key={idx}>
+                    <div className="flex">
                       {customSplit(selectedWord[0], selectedWord[1]).length >
                         1 && (
-                        <span className="font-semibold text-gray-900 pr-2 h-full">
+                        <span className="w-6 shrink-0 font-semibold text-gray-800 content-center">
                           {idx + 1}
                         </span>
-                      )}{" "}
-                      <span
-                        className="pl-2 font-medium leading-1 text-left text-[15px]
-"
-                      >
+                      )}
+                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900 ml-2 space-x-1.5">
                         {word}
                       </span>
-                    </p>
+                    </div>
                   </div>
                 )
               )}
