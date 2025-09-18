@@ -136,10 +136,10 @@ export default function Autocomplete() {
             <h2 className="font-bold text-2xl text-gray-800">
               {selectedWord[0]}
             </h2>
-            <div>
+            <div className="font-sans tracking-wider">
               {customSplit(selectedWord[0], selectedWord[1]).map(
                 (word, idx) => (
-                  <div className="mt-5">
+                  <div className="mt-5" key={idx}>
                     <p className="text-gray-700 text-lg">
                       {customSplit(selectedWord[0], selectedWord[1]).length >
                         1 && (
@@ -147,7 +147,12 @@ export default function Autocomplete() {
                           {idx + 1}
                         </span>
                       )}{" "}
-                      <span className="pl-2">{word}</span>
+                      <span
+                        className="pl-2 font-medium leading-1 text-left text-[15px]
+"
+                      >
+                        {word}
+                      </span>
                     </p>
                   </div>
                 )
