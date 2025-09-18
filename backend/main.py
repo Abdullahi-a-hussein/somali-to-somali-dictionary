@@ -22,7 +22,6 @@ app = FastAPI()
 # In production, this will be your Vercel app's URL.
 origins = [
     FRONTEND_URL,
-    "https://somali-to-somali-dictionary.vercel.app",
     "http://127.0.0.1:3000",
     "http://localhost:3000"
 ]
