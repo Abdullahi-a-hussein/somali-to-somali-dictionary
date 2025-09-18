@@ -11,8 +11,8 @@ import os
 # Render will set these variables in its dashboard.
 DATABASE_FILE = os.getenv('DATABASE_FILE', 'qaamuus.db')
 REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
-FRONTEND_URL = os.getenv(
-    'FRONTEND_URL', 'http://localhost:3000/')
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
+origin_regex = r"https://somali-to-somali-dictionary(-[a-zA-Z0-9]+)?\.vercel\.app"
 
 
 # --- FastAPI App Initialization ---
@@ -29,6 +29,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
+    allow_origin_regex=origin_regex,
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
