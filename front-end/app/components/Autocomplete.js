@@ -139,7 +139,7 @@ export default function Autocomplete() {
             <div className="font-sans tracking-wider">
               {customSplit(selectedWord[0], selectedWord[1]).map(
                 (word, idx) => (
-                  <div className="mt-4" key={idx}>
+                  <div className="mt-2 mb-2" key={idx}>
                     <div className="flex">
                       {customSplit(selectedWord[0], selectedWord[1]).length >
                         1 && (
@@ -147,7 +147,7 @@ export default function Autocomplete() {
                           {idx + 1}
                         </span>
                       )}
-                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900 ml-2 space-x-1.5">
+                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900 space-x-1.5">
                         {word}
                       </span>
                     </div>
