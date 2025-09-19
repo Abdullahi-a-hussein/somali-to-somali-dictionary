@@ -130,7 +130,7 @@ export default function Autocomplete() {
         )}
       </div>
 
-      <div className="mt-6 p-6 border rounded-lg bg-white shadow-sm min-h-[150px]">
+      <div className="mt-6 p-6 min-h-[150px]">
         {selectedWord ? (
           <div>
             <h2 className="font-bold text-2xl text-gray-800">
@@ -143,7 +143,7 @@ export default function Autocomplete() {
                     <div className="flex">
                       {customSplit(selectedWord[0], selectedWord[1]).length >
                         1 && (
-                        <span className="w-6 shrink-0 font-semibold text-gray-800 content-center">
+                        <span className="w-6 shrink-0 font-semibold text-gray-800 ">
                           {idx + 1}
                         </span>
                       )}
@@ -151,6 +151,7 @@ export default function Autocomplete() {
                         {word}
                       </span>
                     </div>
+                    <hr className="h-2 w-[360px] text-gray-200 mt-1 ml-5" />
                   </div>
                 )
               )}
