@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { SuggestWord } from "../server-actions/server-action";
 
 // Use an environment variable for the API URL.
 // In Next.js, variables must start with NEXT_PUBLIC_ to be available in the browser.
@@ -42,18 +43,10 @@ export default function Autocomplete() {
     const { signal } = controller;
 
     const debounceTimer = setTimeout(async () => {
-      try {
-        const res = await fetch(`${API_URL}/suggest/${query}`, { signal });
-        if (!res.ok) throw new Error("Network response was not ok");
-        const data = await res.json();
-        setSuggestions(data);
-        setIsListboxOpen(data.length > 0);
-        setHighlight(-1);
-      } catch (err) {
-        if (err.name !== "AbortError") {
-          console.error("Suggestion fetch failed:", err);
-        }
-      }
+      const data = await SuggestWord(query, signal);
+      setSuggestions(data);
+      setIsListboxOpen(data.length > 0);
+      setHighlight(-1);
     }, 250);
 
     return () => {
@@ -147,20 +140,18 @@ export default function Autocomplete() {
                           {idx + 1}
                         </span>
                       )}
-                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900 space-x-1.5">
+                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900">
                         {word}
                       </span>
                     </div>
-                    <hr className="h-2 w-[360px] text-gray-200 mt-1 ml-5" />
+                    <hr className="h-2 min-w-[150px] text-gray-300 mt-1 ml-3" />
                   </div>
                 )
               )}
             </div>
           </div>
         ) : (
-          <p className="text-gray-400">
-            Erayga aad raadisay halkan ayuu ku soo baxayaa.
-          </p>
+          <p className="text-gray-300">Michuhu halkan ayuu kasoo bixi.</p>
         )}
       </div>
     </div>
