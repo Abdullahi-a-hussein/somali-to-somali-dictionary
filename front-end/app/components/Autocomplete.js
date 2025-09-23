@@ -1,66 +1,29 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { SuggestWord } from "../server-actions/server-action";
-
-// Use an environment variable for the API URL.
-// In Next.js, variables must start with NEXT_PUBLIC_ to be available in the browser.
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+import { useDebouncedFetch } from "../hooks/useDebouncedFetch";
+import { customSplit } from "../utils/utils";
 
 export default function Autocomplete() {
   const [query, setQuery] = useState("");
-  const [suggestions, setSuggestions] = useState([]);
   const [selectedWord, setSelectedWord] = useState(null);
-  const [isListboxOpen, setIsListboxOpen] = useState(false);
   const [highlight, setHighlight] = useState(-1);
 
-  function customSplit(word, text) {
-    // Step 1: Replace " 1. " with a space
-    text = text.replace(/\s1\.\s/g, " ");
+  // ✅ Use custom hook for fetching suggestions
+  const { data: suggestions, loading } = useDebouncedFetch(
+    SuggestWord,
+    query,
+    250
+  );
 
-    // Step 2: Pattern for either "{number}. " (2–99) or "{word}: "
-    // No leading space required before word:
-    const pattern = new RegExp(`(?: [2-9]\\d?\\. |${word}: )`, "g");
-
-    // Step 3: Split text on the pattern
-    let parts = text.split(pattern);
-
-    // Step 4: Clean up whitespace and empties
-    let substrings = parts.map((p) => p.trim()).filter((p) => p.length > 0);
-
-    return substrings;
-  }
-
-  useEffect(() => {
-    // Don't fetch if the query is empty or if it matches the currently selected word
-    if (!query || (selectedWord && query === selectedWord[0])) {
-      setSuggestions([]);
-      setIsListboxOpen(false);
-      return;
-    }
-
-    const controller = new AbortController();
-    const { signal } = controller;
-
-    const debounceTimer = setTimeout(async () => {
-      const data = await SuggestWord(query, signal);
-      setSuggestions(data);
-      setIsListboxOpen(data.length > 0);
-      setHighlight(-1);
-    }, 250);
-
-    return () => {
-      clearTimeout(debounceTimer);
-      controller.abort();
-    };
-  }, [query, selectedWord]);
+  // ✅ Show dropdown only if we have suggestions
+  const isListboxOpen =
+    suggestions.length > 0 && (!selectedWord || query !== selectedWord[0]);
 
   const handleSelect = useCallback((wordData) => {
-    // wordData is now an array: [headword, definition]
     setQuery(wordData[0]);
     setSelectedWord(wordData);
-    setSuggestions([]);
-    setIsListboxOpen(false);
   }, []);
 
   const handleKeyDown = (e) => {
@@ -76,13 +39,20 @@ export default function Autocomplete() {
       );
     } else if (e.key === "Enter" && highlight >= 0) {
       handleSelect(suggestions[highlight]);
+    } else if (
+      e.key == "Enter" &&
+      highlight < 0 &&
+      query == suggestions[0][0]
+    ) {
+      handleSelect(suggestions[0]);
     } else if (e.key === "Escape") {
-      setIsListboxOpen(false);
+      setHighlight(-1);
     }
   };
 
   return (
     <div className="w-full max-w-xl mx-auto font-sans">
+      {/* 🔍 Input */}
       <div className="relative">
         <input
           type="text"
@@ -99,6 +69,15 @@ export default function Autocomplete() {
             highlight >= 0 ? `suggestion-${highlight}` : undefined
           }
         />
+
+        {/* Loader */}
+        {loading && (
+          <p className="absolute top-full mt-1 text-gray-400 text-sm italic">
+            Fetching suggestions…
+          </p>
+        )}
+
+        {/* Suggestions dropdown */}
         {isListboxOpen && (
           <ul
             className="absolute z-10 w-full border mt-1 rounded-md bg-white shadow-lg"
@@ -123,35 +102,32 @@ export default function Autocomplete() {
         )}
       </div>
 
+      {/* 📖 Definition section */}
       <div className="mt-6 p-6 min-h-[150px]">
-        {selectedWord ? (
+        {selectedWord && (
           <div>
             <h2 className="font-bold text-2xl text-gray-800">
               {selectedWord[0]}
             </h2>
             <div className="font-sans tracking-wider">
               {customSplit(selectedWord[0], selectedWord[1]).map(
-                (word, idx) => (
-                  <div className="mt-2 mb-2" key={idx}>
-                    <div className="flex">
-                      {customSplit(selectedWord[0], selectedWord[1]).length >
-                        1 && (
-                        <span className="w-6 shrink-0 font-semibold text-gray-800 ">
-                          {idx + 1}
+                (word, idx, arr) => (
+                  <div className="mt-5" key={`${word}-${idx}`}>
+                    <p className="text-gray-700 text-lg flex items-start">
+                      {arr.length > 1 && (
+                        <span className="font-semibold text-gray-900 pr-3 min-w-[24px] text-right">
+                          {idx + 1}.
                         </span>
                       )}
-                      <span className="flex-1 font-serif text-[16px] leading-8 text-gray-900">
+                      <span className="font-medium leading-relaxed text-[15px] break-words">
                         {word}
                       </span>
-                    </div>
-                    <hr className="h-2 min-w-[150px] text-gray-300 mt-1 ml-3" />
+                    </p>
                   </div>
                 )
               )}
             </div>
           </div>
-        ) : (
-          <p className="text-gray-300">Michuhu halkan ayuu kasoo bixi.</p>
         )}
       </div>
     </div>
