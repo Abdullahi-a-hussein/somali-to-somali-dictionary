@@ -123,6 +123,7 @@ export default function Autocomplete() {
                         {word}
                       </span>
                     </p>
+                    <hr className="h-2 min-w-[150px] text-gray-200 mt-1 ml-3 pl-3" />
                   </div>
                 )
               )}
