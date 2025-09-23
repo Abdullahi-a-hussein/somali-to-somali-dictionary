@@ -112,7 +112,7 @@ export default function Autocomplete() {
             <div className="font-sans tracking-wider">
               {customSplit(selectedWord[0], selectedWord[1]).map(
                 (word, idx, arr) => (
-                  <div className="mt-5" key={`${word}-${idx}`}>
+                  <div className="my-2" key={`${word}-${idx}`}>
                     <p className="text-gray-700 text-lg flex items-start">
                       {arr.length > 1 && (
                         <span className="font-semibold text-gray-900 pr-3 min-w-[24px] text-right">
