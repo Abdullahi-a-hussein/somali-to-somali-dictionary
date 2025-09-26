@@ -4,6 +4,8 @@ import { useState, useCallback } from "react";
 import { SuggestWord } from "../server-actions/server-action";
 import { useDebouncedFetch } from "../hooks/useDebouncedFetch";
 import { customSplit } from "../utils/utils";
+import { findMarkers } from "../utils/utils";
+import { markersWithNodefinition } from "../utils/utils";
 
 export default function Autocomplete() {
   const [query, setQuery] = useState("");
@@ -113,16 +115,31 @@ export default function Autocomplete() {
               {customSplit(selectedWord[0], selectedWord[1]).map(
                 (word, idx, arr) => (
                   <div className="my-2" key={`${word}-${idx}`}>
-                    <p className="text-gray-700 text-lg flex items-start">
-                      {arr.length > 1 && (
-                        <span className="font-semibold text-gray-900 pr-3 min-w-[24px] text-right">
-                          {idx + 1}.
-                        </span>
-                      )}
-                      <span className="font-medium leading-relaxed text-[15px] break-words">
-                        {word}
-                      </span>
-                    </p>
+                    <div className="text-gray-700 text-lg">
+                      {
+                        <div className="font-semibold text-gray-900 pr-3 min-w-[24px] mb-2">
+                          {arr.length > 1 && <span>{idx + 1}.</span>}
+
+                          {findMarkers(word).length > 1 && (
+                            <div className="inline ml-5">
+                              {markersWithNodefinition(word).map(
+                                (entry, current_index, items) => (
+                                  <span
+                                    key={`${current_index}-${entry}`}
+                                    className="font-small text-[12px] text-gray-500"
+                                  >
+                                    {entry}{" "}
+                                  </span>
+                                )
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      }
+                      <p className="leading-relaxed text-[15px] break-words pl-3 tracking-wider font-medium">
+                        {findMarkers(word)[findMarkers(word).length - 1]}
+                      </p>
+                    </div>
                     <hr className="h-2 min-w-[150px] text-gray-200 mt-1 ml-3 pl-3" />
                   </div>
                 )
