@@ -29,7 +29,7 @@ function DefinitionBlock({ header, bodies }) {
         {normalizedBodies.map((text, i) => (
           <div
             key={`${header ?? "nohdr"}-${i}`}
-            className="flex items-start ml-5"
+            className="flex items-start ml-4"
           >
             {useNumbers && (
               <span className="font-semibold text-gray-800 mr-2">{i + 1}.</span>
