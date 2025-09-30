@@ -100,7 +100,6 @@ export default function Autocomplete() {
     const tokenized = chunks.map((chunk) =>
       tokenizeDefinition(headword, chunk)
     );
-    console.log(tokenized);
 
     // Group by header (null = no marker)
     return groupDefinitionsByHeader(tokenized);
