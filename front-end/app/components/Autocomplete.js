@@ -1,31 +1,70 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { SuggestWord } from "../server-actions/server-action";
 import { useDebouncedFetch } from "../hooks/useDebouncedFetch";
-import { customSplit } from "../utils/utils";
-import { findMarkers } from "../utils/utils";
-import { markersWithNodefinition } from "../utils/utils";
+import {
+  customSplit,
+  tokenizeDefinition,
+  groupDefinitionsByHeader,
+} from "../utils/utils";
+
+function DefinitionBlock({ header, bodies }) {
+  // Normalize definitions: split into multiple if separated by blank lines
+  const normalizedBodies = bodies.flatMap((body) =>
+    body
+      .split(/\n{2,}/)
+      .map((line) => line.trim())
+      .filter(Boolean)
+  );
+  const useNumbers = normalizedBodies.length > 1;
+
+  return (
+    <div className="mb-4">
+      {header && (
+        <div className="font-semibold text-gray-800 mt-4 mb-4">{header}</div>
+      )}
+
+      <div className="space-y-3">
+        {normalizedBodies.map((text, i) => (
+          <div
+            key={`${header ?? "nohdr"}-${i}`}
+            className="flex items-start ml-5"
+          >
+            {useNumbers && (
+              <span className="font-semibold text-gray-800 mr-2">{i + 1}.</span>
+            )}
+            <p className="leading-relaxed text-[14px] tracking-wider font-medium text-gray-700">
+              {text}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <hr className="h-2 min-w-[150px] text-gray-200 mt-3" />
+    </div>
+  );
+}
 
 export default function Autocomplete() {
   const [query, setQuery] = useState("");
   const [selectedWord, setSelectedWord] = useState(null);
   const [highlight, setHighlight] = useState(-1);
 
-  // ✅ Use custom hook for fetching suggestions
-  const { data: suggestions, loading } = useDebouncedFetch(
+  // Debounced fetch for suggestions
+  const { data: suggestions = [], loading } = useDebouncedFetch(
     SuggestWord,
     query,
     250
   );
 
-  // ✅ Show dropdown only if we have suggestions
   const isListboxOpen =
     suggestions.length > 0 && (!selectedWord || query !== selectedWord[0]);
 
   const handleSelect = useCallback((wordData) => {
     setQuery(wordData[0]);
     setSelectedWord(wordData);
+    setHighlight(-1);
   }, []);
 
   const handleKeyDown = (e) => {
@@ -39,22 +78,37 @@ export default function Autocomplete() {
       setHighlight(
         (prev) => (prev - 1 + suggestions.length) % suggestions.length
       );
-    } else if (e.key === "Enter" && highlight >= 0) {
-      handleSelect(suggestions[highlight]);
-    } else if (
-      e.key == "Enter" &&
-      highlight < 0 &&
-      query == suggestions[0][0]
-    ) {
-      handleSelect(suggestions[0]);
+    } else if (e.key === "Enter") {
+      if (highlight >= 0) {
+        handleSelect(suggestions[highlight]);
+      } else if (query === suggestions[0][0]) {
+        handleSelect(suggestions[0]);
+      }
     } else if (e.key === "Escape") {
       setHighlight(-1);
     }
   };
 
+  // Build grouped & formatted definitions once per selected word
+  const grouped = useMemo(() => {
+    if (!selectedWord) return [];
+
+    const [headword, rawDefinition] = selectedWord;
+    const chunks = customSplit(headword, rawDefinition);
+
+    // Tokenize each chunk to {header, body}
+    const tokenized = chunks.map((chunk) =>
+      tokenizeDefinition(headword, chunk)
+    );
+    console.log(tokenized);
+
+    // Group by header (null = no marker)
+    return groupDefinitionsByHeader(tokenized);
+  }, [selectedWord]);
+
   return (
     <div className="w-full max-w-xl mx-auto font-sans">
-      {/* 🔍 Input */}
+      {/* Search Input */}
       <div className="relative">
         <input
           type="text"
@@ -79,7 +133,7 @@ export default function Autocomplete() {
           </p>
         )}
 
-        {/* Suggestions dropdown */}
+        {/* Suggestions */}
         {isListboxOpen && (
           <ul
             className="absolute z-10 w-full border mt-1 rounded-md bg-white shadow-lg"
@@ -104,46 +158,24 @@ export default function Autocomplete() {
         )}
       </div>
 
-      {/* 📖 Definition section */}
+      {/* Definitions */}
       <div className="mt-6 p-6 min-h-[150px]">
         {selectedWord && (
           <div>
-            <h2 className="font-bold text-2xl text-gray-800">
+            {/* Main headword */}
+            <h2 className="font-bold text-3xl text-gray-800">
               {selectedWord[0]}
             </h2>
-            <div className="font-sans tracking-wider">
-              {customSplit(selectedWord[0], selectedWord[1]).map(
-                (word, idx, arr) => (
-                  <div className="my-2" key={`${word}-${idx}`}>
-                    <div className="text-gray-700 text-lg">
-                      {
-                        <div className="font-semibold text-gray-900 pr-3 min-w-[24px] mb-2">
-                          {arr.length > 1 && <span>{idx + 1}.</span>}
 
-                          {findMarkers(word).length > 1 && (
-                            <div className="inline ml-5">
-                              {markersWithNodefinition(word).map(
-                                (entry, current_index, items) => (
-                                  <span
-                                    key={`${current_index}-${entry}`}
-                                    className="font-small text-[12px] text-gray-500"
-                                  >
-                                    {entry}{" "}
-                                  </span>
-                                )
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      }
-                      <p className="leading-relaxed text-[15px] break-words pl-3 tracking-wider font-medium">
-                        {findMarkers(word)[findMarkers(word).length - 1]}
-                      </p>
-                    </div>
-                    <hr className="h-2 min-w-[150px] text-gray-200 mt-1 ml-3 pl-3" />
-                  </div>
-                )
-              )}
+            {/* Blocks: each block is one header (marker) + its definitions */}
+            <div className="font-sans tracking-wider">
+              {grouped.map(({ header, bodies }, i) => (
+                <DefinitionBlock
+                  key={`block-${i}-${header ?? "nohdr"}`}
+                  header={header}
+                  bodies={bodies}
+                />
+              ))}
             </div>
           </div>
         )}
