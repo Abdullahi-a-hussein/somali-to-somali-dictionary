@@ -106,12 +106,12 @@ export default function Autocomplete() {
   }, [selectedWord]);
 
   return (
-    <div className="w-full max-w-xl mx-auto font-sans">
+    <div className="w-full max-w-full md:max-w-xl lg:max-w-[780px] mx-auto font-sans">
       {/* Search Input */}
       <div className="relative">
         <input
           type="text"
-          className="border p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg shadow-sm"
+          className="border p-3 rounded-lg w-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg shadow-sm"
           placeholder="Raadi erey..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
