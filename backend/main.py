@@ -12,7 +12,7 @@ import os
 DATABASE_FILE = os.getenv('DATABASE_FILE', 'qaamuus.db')
 REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379')
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
-origin_regex = r"https://somali-to-somali-diction([-\w]+)?\.vercel\.app/?"
+origin_regex = r"https://somali-to-somali-diction([-\w]+)?\.vercel\.app?"
 
 
 # --- FastAPI App Initialization ---
