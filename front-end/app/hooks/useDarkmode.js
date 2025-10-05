@@ -9,7 +9,9 @@ export function useDarkMode() {
   // 1. Get initial state from localStorage or system preference
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Check localStorage first
-    const storedPreference = localStorage.getItem(DARK_MODE_KEY);
+    const storedPreference = window?.localStorage?.getItem(DARK_MODE_KEY)
+      ? JSON.parse(localStorage.getItem(DARK_MODE_KEY))
+      : null;
     if (storedPreference !== null) {
       return storedPreference === "true";
     }
