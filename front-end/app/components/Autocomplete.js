@@ -22,7 +22,9 @@ function DefinitionBlock({ header, bodies }) {
   return (
     <div className="mb-4">
       {header && (
-        <div className="font-semibold text-gray-800 mt-4 mb-4">{header}</div>
+        <div className="font-semibold text-[var(--foreground)] mt-4 mb-4">
+          {header}
+        </div>
       )}
 
       <div className="space-y-3">
@@ -32,16 +34,18 @@ function DefinitionBlock({ header, bodies }) {
             className="flex items-start ml-4"
           >
             {useNumbers && (
-              <span className="font-semibold text-gray-800 mr-2">{i + 1}.</span>
+              <span className="font-semibold text-[var(--foreground)] mr-2">
+                {i + 1}.
+              </span>
             )}
-            <p className="leading-relaxed text-[14px] tracking-wider font-medium text-gray-700">
+            <p className="leading-relaxed text-[14px] tracking-wider font-medium text-[var(--secondary-color)]">
               {text}
             </p>
           </div>
         ))}
       </div>
 
-      <hr className="h-2 min-w-[150px] text-gray-200 mt-3" />
+      <hr className="h-2 min-w-[150px] text-[var(--tertiary-color)] mt-3" />
     </div>
   );
 }
@@ -111,7 +115,7 @@ export default function Autocomplete() {
       <div className="relative">
         <input
           type="text"
-          className="border p-3 rounded-lg w-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-lg shadow-sm"
+          className="border p-3 rounded-lg w-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[var(--foreground)] text-lg shadow-sm"
           placeholder="Raadi erey..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -127,7 +131,7 @@ export default function Autocomplete() {
 
         {/* Loader */}
         {loading && (
-          <p className="absolute top-full mt-1 text-gray-400 text-sm italic">
+          <p className="absolute top-full mt-1 text-[var(--tertiary-color)] text-sm italic">
             Fetching suggestions…
           </p>
         )}
@@ -135,7 +139,7 @@ export default function Autocomplete() {
         {/* Suggestions */}
         {isListboxOpen && (
           <ul
-            className="absolute z-10 w-full border mt-1 rounded-md bg-white shadow-lg"
+            className="absolute z-10 w-full border mt-1 rounded-md bg-[var(--background)] shadow-lg"
             role="listbox"
             id="suggestions-listbox"
           >
@@ -145,8 +149,8 @@ export default function Autocomplete() {
                 id={`suggestion-${i}`}
                 role="option"
                 aria-selected={i === highlight}
-                className={`p-3 cursor-pointer text-gray-900 hover:bg-blue-500 hover:text-white ${
-                  i === highlight ? "bg-blue-600 text-white" : ""
+                className={`p-3 cursor-pointer text-[var(-foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
+                  i === highlight ? "bg-blue-600 text-[var(-foreground)]" : ""
                 }`}
                 onMouseDown={() => handleSelect(wordData)}
               >
@@ -162,7 +166,7 @@ export default function Autocomplete() {
         {selectedWord && (
           <div>
             {/* Main headword */}
-            <h2 className="font-bold text-3xl text-gray-800">
+            <h2 className="font-bold text-3xl text-[var(--foreground)]">
               {selectedWord[0]}
             </h2>
 

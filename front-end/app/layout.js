@@ -70,6 +70,9 @@ export const metadata = {
   other: {
     google: "notranslate", // disables auto-translation
   },
+  icons: {
+    icon: "/favicon.ico", // <-- This is where you add your favicon
+  },
 };
 
 export default function RootLayout({ children }) {
