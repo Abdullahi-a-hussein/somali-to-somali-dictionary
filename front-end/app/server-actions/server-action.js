@@ -1,8 +1,15 @@
 // utils/suggestWord.js
+//server actions
 export async function SuggestWord(query, signal) {
   const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  const headers = {
+    "x-api-key": process.env.API_KEY,
+  };
   try {
-    const response = await fetch(`${API_URL}/suggest/${query}`, { signal });
+    const response = await fetch(`${API_URL}/qaamuus/suggest/${query}`, {
+      headers,
+      signal,
+    });
     if (!response.ok) {
       throw new Error("Server response is not okay!");
     }
