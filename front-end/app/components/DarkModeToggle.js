@@ -9,13 +9,14 @@ export const DarkModeToggle = () => {
     <button
       onClick={toggleDarkMode}
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-      className="relative w-17 h-8 rounded-full transition-colors duration-300 overflow-hidden
+      className="relative w-10 h-10 rounded-full transition-colors duration-300 overflow-hidden
                  flex items-center align-super p-2 bg-[var(--tertiary-color)]"
     >
       {/* Slider knob */}
       <span
-        className={`w-5 h-5 rounded-full  shadow-md transition-transform duration-300
-                   ${isDarkMode ? "translate-x-7" : "translate-x-0"}`}
+        className={
+          "w-5 h-5 rounded-full  shadow-md transition-transform duration-200"
+        }
       >
         {isDarkMode ? (
           <svg viewBox="0 0 24 24" width="24" height="24">
