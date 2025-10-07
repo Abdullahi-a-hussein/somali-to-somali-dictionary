@@ -17,7 +17,7 @@ export const DarkModeToggle = () => {
       {/* Slider knob */}
       <span
         className={
-          "w-5 h-5 rounded-full  shadow-md transition-transform duration-200"
+          "w-6 h-6 rounded-full  shadow-md transition-transform duration-200"
         }
       >
         {isDarkMode ? (
