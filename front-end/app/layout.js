@@ -32,7 +32,7 @@ export const metadata = {
     title: "Qaamuuska Soomaaliga - Somali to Somali Dictionary",
     description:
       "Ka hel fasiraad buuxda oo Soomaali ah eray kasta oo aad rabto. Qaamuus Online ah oo Af-Soomaali ku qoran.",
-    url: "https://somali-to-somali-dictionary.vercel.app/",
+    url: "https://qaamuus.xaruntasoomaaliga.com/",
     siteName: "Qaamuuska Soomaaliga",
     locale: "so_SO",
     type: "website",
@@ -64,7 +64,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://somali-to-somali-dictionary.vercel.app",
+    canonical: "https://qaamuus.xaruntasoomaaliga.com",
   },
 
   other: {
@@ -91,7 +91,28 @@ export default function RootLayout({ children }) {
     observer.observe(document.body, { childList: true, subtree: true });
   }
   return (
-    <html lang="so" translate="no">
+    <html lang="so" translate="no" suppressContentEditableWarning>
+      <head>
+        {/* Apply dark mode immediately before hydration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const stored = localStorage.getItem('darkModePreference');
+                  const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (stored === 'true' || (stored === null && system)) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (_) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+
       <body className={inter.className}>{children}</body>
     </html>
   );

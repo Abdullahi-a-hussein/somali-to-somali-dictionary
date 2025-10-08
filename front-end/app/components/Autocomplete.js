@@ -110,7 +110,7 @@ export default function Autocomplete() {
   }, [selectedWord]);
 
   return (
-    <div className="w-full max-w-full md:max-w-xl lg:max-w-[780px] mx-auto font-sans">
+    <div className="w-full max-w-[780px] mx-auto font-sans">
       {/* Search Input */}
       <div className="relative">
         <input

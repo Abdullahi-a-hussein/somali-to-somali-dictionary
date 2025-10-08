@@ -1,4 +1,5 @@
 import os
+
 import json
 import sqlite3
 import redis
@@ -10,6 +11,8 @@ DATABASE_FILE = os.getenv("DATABASE_FILE", "qaamuus.db")
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 # secret key shared with Next.js
 API_KEY = os.getenv("API_KEY")
+# ENV = os.getenv("ENV")
+ENV = os.getenv("ENV", "development")
 
 # --- App Initialization ---
 app = FastAPI(title="Qaamuus API", version="1.0.0")
@@ -45,7 +48,8 @@ def verify_internal_key(x_api_key: str = Header(None)):
 @app.get("/qaamuus/suggest/{prefix}", response_model=list[list[str]])
 def suggest(prefix: str, x_api_key: str = Header(None)):
     """Return suggested Somali words for a given prefix."""
-    verify_internal_key(x_api_key)
+    if not (ENV == "development"):
+        verify_internal_key(x_api_key)
 
     if not prefix:
         return []
