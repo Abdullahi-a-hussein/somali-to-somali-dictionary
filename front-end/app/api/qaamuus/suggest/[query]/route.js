@@ -1,6 +1,7 @@
-export const dynamic = "force-dynamic";
-
 import { NextResponse } from "next/server";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function GET(request, { params }) {
   const { query } = params;
@@ -12,6 +13,7 @@ export async function GET(request, { params }) {
       headers: {
         "x-api-key": API_KEY,
       },
+      cache: "no-store",
     });
 
     if (!response.ok) {
