@@ -1,10 +1,7 @@
 import { NextResponse } from "next/server";
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
-
 export async function GET(request, { params }) {
-  const { query } = params;
+  const { query } = await params;
   const API_URL = process.env.API_URL;
   const API_KEY = process.env.API_KEY;
 
@@ -13,7 +10,6 @@ export async function GET(request, { params }) {
       headers: {
         "x-api-key": API_KEY,
       },
-      cache: "no-store",
     });
 
     if (!response.ok) {
