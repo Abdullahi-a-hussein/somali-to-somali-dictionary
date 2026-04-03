@@ -1,7 +1,11 @@
 "use client";
 
 import { useState, useCallback, useMemo } from "react";
-import { SuggestWord } from "../server-actions/server-action";
+import {
+  SuggestWord,
+  getPrefixes,
+  getSelected,
+} from "../server-actions/server-action";
 import { useDebouncedFetch } from "../hooks/useDebouncedFetch";
 import {
   customSplit,
@@ -15,7 +19,7 @@ function DefinitionBlock({ header, bodies }) {
     body
       .split(/\n{2,}/)
       .map((line) => line.trim())
-      .filter(Boolean)
+      .filter(Boolean),
   );
   const useNumbers = normalizedBodies.length > 1;
 
@@ -59,7 +63,7 @@ export default function Autocomplete() {
   const { data: suggestions = [], loading } = useDebouncedFetch(
     SuggestWord,
     query,
-    250
+    250,
   );
 
   const isListboxOpen =
@@ -80,7 +84,7 @@ export default function Autocomplete() {
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setHighlight(
-        (prev) => (prev - 1 + suggestions.length) % suggestions.length
+        (prev) => (prev - 1 + suggestions.length) % suggestions.length,
       );
     } else if (e.key === "Enter") {
       if (highlight >= 0) {
@@ -102,7 +106,7 @@ export default function Autocomplete() {
 
     // Tokenize each chunk to {header, body}
     const tokenized = chunks.map((chunk) =>
-      tokenizeDefinition(headword, chunk)
+      tokenizeDefinition(headword, chunk),
     );
 
     // Group by header (null = no marker)
@@ -131,7 +135,7 @@ export default function Autocomplete() {
 
         {/* Loader */}
         {loading && (
-          <p className="absolute top-full mt-1 text-[var(--tertiary-color)] text-sm italic">
+          <p className="absolute top-full mt-4 text-[var(--tertiary-color)] text-sm italic">
             Fetching suggestions…
           </p>
         )}
@@ -139,7 +143,7 @@ export default function Autocomplete() {
         {/* Suggestions */}
         {isListboxOpen && (
           <ul
-            className="absolute z-10 w-full border mt-1 rounded-md bg-[var(--background)] shadow-lg"
+            className="absolute z-10 w-full  mt-4 p-4 tracking-wider rounded-md bg-[var(--background-second)] shadow-lg"
             role="listbox"
             id="suggestions-listbox"
           >
@@ -149,7 +153,7 @@ export default function Autocomplete() {
                 id={`suggestion-${i}`}
                 role="option"
                 aria-selected={i === highlight}
-                className={`p-3 cursor-pointer text-[var(--foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
+                className={`ml-3 pt-2 pb-2 cursor-pointer text-[var(--foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
                   i === highlight ? "bg-blue-600 text-[var(--foreground)]" : ""
                 }`}
                 onMouseDown={() => handleSelect(wordData)}

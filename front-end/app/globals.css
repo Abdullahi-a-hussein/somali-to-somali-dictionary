@@ -3,12 +3,14 @@
 :root {
   --background: #f3f4f6;
   --foreground: #101828;
+  --background-second: #eeeeef;
   --secondary-color: #364153;
   --tertiary-color: #99a1af;
 }
 
 .dark {
   --background: #101828; /* opposite of light bg */
+  --background-second: #131c2f;
   --foreground: #f3f4f6; /* opposite of dark text */
   --secondary-color: #c7cdd8; /* softened inverse of #364153 */
   --tertiary-color: #4a515c; /* deeper counterpart to #99a1af */

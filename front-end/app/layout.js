@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
     // Attempt to remove existing translation banners injected by Google
     const observer = new MutationObserver(() => {
       const translateBar = document.querySelector(
-        ".goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb, .VIpgJd-ZVi9od-xl07Ob"
+        ".goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb, .VIpgJd-ZVi9od-xl07Ob",
       );
       if (translateBar) translateBar.remove();
     });
