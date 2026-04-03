@@ -1,5 +1,5 @@
 import os
-
+from dotenv import load_dotenv
 import json
 import sqlite3
 import redis
@@ -7,12 +7,12 @@ from fastapi import FastAPI, Header, HTTPException
 from rapidfuzz import process, fuzz
 
 # --- Configuration ---
+load_dotenv()
 DATABASE_FILE = os.getenv("DATABASE_FILE", "qaamuus.db")
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 # secret key shared with Next.js
 API_KEY = os.getenv("API_KEY")
-# ENV = os.getenv("ENV")
-ENV = os.getenv("ENV", "development")
+ENV = os.getenv("ENV")
 
 # --- App Initialization ---
 app = FastAPI(title="Qaamuus API", version="1.0.0")

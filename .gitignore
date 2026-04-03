@@ -1,4 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 node_modules/
@@ -44,6 +43,7 @@ next-env.d.ts
 venv/
 words/
 corrected_words/
+clean_json/
 *.csv
 
 # Python cache
