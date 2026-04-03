@@ -5,9 +5,18 @@ import sqlite3
 import redis
 from fastapi import FastAPI, Header, HTTPException
 from rapidfuzz import process, fuzz
+from logger_config import setup_logging
+
+from utils.data import find_word, connect_to_db, get_starting_at
 
 # --- Configuration ---
+
+# setup loggin
+setup_logging()
+
+# Load environment variables
 load_dotenv()
+
 DATABASE_FILE = os.getenv("DATABASE_FILE", "qaamuus.db")
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 # secret key shared with Next.js
@@ -27,10 +36,6 @@ except redis.exceptions.ConnectionError as e:
     redis_client = None
 
 # --- Utility ---
-
-
-def get_db_connection():
-    return sqlite3.connect(DATABASE_FILE)
 
 
 def verify_internal_key(x_api_key: str = Header(None)):
@@ -56,7 +61,7 @@ def suggest(prefix: str, x_api_key: str = Header(None)):
 
     prefix_lower = prefix.lower()
 
-    with get_db_connection() as conn:
+    with connect_to_db(DATABASE_FILE) as conn:
         cursor = conn.cursor()
 
         # 1. Direct prefix search
@@ -101,7 +106,7 @@ def define(word: str, x_api_key: str = Header(None)):
             return json.loads(cached)
 
     # 2. Query database
-    with get_db_connection() as conn:
+    with connect_to_db(DATABASE_FILE) as conn:
         cursor = conn.cursor()
         cursor.execute(
             "SELECT headword, definition FROM qaamuus WHERE headword = ?", (word_lower,))
@@ -117,3 +122,13 @@ def define(word: str, x_api_key: str = Header(None)):
             redis_client.set(word_lower, json.dumps(data), ex=3600)
 
         return data
+
+
+@app.get("/qaamuus/clean/find/{word}")
+def find_entry(word: str, x_api_key: str = Header(None)):
+    return find_word(word)
+
+
+@app.get("/qaamuus/clean/suggest/{prefix}")
+def get_prefex(prefix: str, x_api_key: str = Header(None)):
+    return get_starting_at(prefix.lower())
