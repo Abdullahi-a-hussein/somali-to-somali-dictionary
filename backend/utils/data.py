@@ -421,6 +421,6 @@ def get_starting_at(prefix: str) -> list[str]:
 
 
 if __name__ == "__main__":
-    setup()
-    load_data()
+    # setup()
+    # load_data()
     verify_data_load()

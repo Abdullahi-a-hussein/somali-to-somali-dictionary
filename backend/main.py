@@ -126,9 +126,11 @@ def define(word: str, x_api_key: str = Header(None)):
 
 @app.get("/qaamuus/clean/find/{word}")
 def find_entry(word: str, x_api_key: str = Header(None)):
+    verify_internal_key(x_api_key)
     return find_word(word)
 
 
 @app.get("/qaamuus/clean/suggest/{prefix}")
 def get_prefex(prefix: str, x_api_key: str = Header(None)):
+    verify_internal_key(x_api_key)
     return get_starting_at(prefix.lower())
