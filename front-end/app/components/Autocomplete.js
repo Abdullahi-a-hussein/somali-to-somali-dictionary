@@ -1,76 +1,32 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback } from "react";
+import { getPrefixes, getSelected } from "../server-actions/server-action";
 import {
-  SuggestWord,
-  getPrefixes,
-  getSelected,
-} from "../server-actions/server-action";
-import { useDebouncedFetch } from "../hooks/useDebouncedFetch";
-import {
-  customSplit,
-  tokenizeDefinition,
-  groupDefinitionsByHeader,
-} from "../utils/utils";
-
-function DefinitionBlock({ header, bodies }) {
-  // Normalize definitions: split into multiple if separated by blank lines
-  const normalizedBodies = bodies.flatMap((body) =>
-    body
-      .split(/\n{2,}/)
-      .map((line) => line.trim())
-      .filter(Boolean),
-  );
-  const useNumbers = normalizedBodies.length > 1;
-
-  return (
-    <div className="mb-4">
-      {header && (
-        <div className="font-semibold text-[var(--foreground)] mt-4 mb-4">
-          {header}
-        </div>
-      )}
-
-      <div className="space-y-3">
-        {normalizedBodies.map((text, i) => (
-          <div
-            key={`${header ?? "nohdr"}-${i}`}
-            className="flex items-start ml-4"
-          >
-            {useNumbers && (
-              <span className="font-semibold text-[var(--foreground)] mr-2">
-                {i + 1}.
-              </span>
-            )}
-            <p className="leading-relaxed text-[14px] tracking-wider font-medium text-[var(--secondary-color)]">
-              {text}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      <hr className="h-2 min-w-[150px] text-[var(--tertiary-color)] mt-3" />
-    </div>
-  );
-}
+  useDebouncedFindFetch,
+  useDebouncedSuggestFetch,
+} from "../hooks/useDebouncedFetch";
+import Entry from "./Entry";
 
 export default function Autocomplete() {
   const [query, setQuery] = useState("");
   const [selectedWord, setSelectedWord] = useState(null);
   const [highlight, setHighlight] = useState(-1);
 
-  // Debounced fetch for suggestions
-  const { data: suggestions = [], loading } = useDebouncedFetch(
-    SuggestWord,
+  // Debounced fetches for suggestions
+  const { data: suggestions = [], loading } = useDebouncedSuggestFetch(
+    getPrefixes,
     query,
     250,
   );
 
+  const { entries } = useDebouncedFindFetch(getSelected, selectedWord, 50);
+
   const isListboxOpen =
-    suggestions.length > 0 && (!selectedWord || query !== selectedWord[0]);
+    suggestions.length > 0 && (!selectedWord || query !== selectedWord);
 
   const handleSelect = useCallback((wordData) => {
-    setQuery(wordData[0]);
+    setQuery(wordData);
     setSelectedWord(wordData);
     setHighlight(-1);
   }, []);
@@ -89,29 +45,13 @@ export default function Autocomplete() {
     } else if (e.key === "Enter") {
       if (highlight >= 0) {
         handleSelect(suggestions[highlight]);
-      } else if (query === suggestions[0][0]) {
+      } else if (query === suggestions[0]) {
         handleSelect(suggestions[0]);
       }
     } else if (e.key === "Escape") {
       setHighlight(-1);
     }
   };
-
-  // Build grouped & formatted definitions once per selected word
-  const grouped = useMemo(() => {
-    if (!selectedWord) return [];
-
-    const [headword, rawDefinition] = selectedWord;
-    const chunks = customSplit(headword, rawDefinition);
-
-    // Tokenize each chunk to {header, body}
-    const tokenized = chunks.map((chunk) =>
-      tokenizeDefinition(headword, chunk),
-    );
-
-    // Group by header (null = no marker)
-    return groupDefinitionsByHeader(tokenized);
-  }, [selectedWord]);
 
   return (
     <div className="w-full max-w-[780px] mx-auto font-sans">
@@ -158,7 +98,7 @@ export default function Autocomplete() {
                 }`}
                 onMouseDown={() => handleSelect(wordData)}
               >
-                {wordData[0]}
+                {wordData}
               </li>
             ))}
           </ul>
@@ -171,16 +111,15 @@ export default function Autocomplete() {
           <div>
             {/* Main headword */}
             <h2 className="font-bold text-3xl text-[var(--foreground)]">
-              {selectedWord[0]}
+              {selectedWord}
             </h2>
 
             {/* Blocks: each block is one header (marker) + its definitions */}
             <div className="font-sans tracking-wider">
-              {grouped.map(({ header, bodies }, i) => (
-                <DefinitionBlock
-                  key={`block-${i}-${header ?? "nohdr"}`}
-                  header={header}
-                  bodies={bodies}
+              {entries.map((entry, i) => (
+                <Entry
+                  key={`${entry.pos}-${entry.header}-${i}`}
+                  entry={entry}
                 />
               ))}
             </div>

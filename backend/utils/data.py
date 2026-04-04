@@ -112,6 +112,35 @@ def setup() -> bool:
             """
         )
 
+        # Create indexes
+        cursor.execute(
+            f"""
+            CREATE INDEX idx_entries_headword
+            ON {ENTRIES}(headword);
+            """
+        )
+
+        cursor.execute(
+            f"""
+            CREATE INDEX idx_senses_entry_id_sense_order
+            ON {SENSES}(entry_id, sense_order);
+            """
+        )
+
+        cursor.execute(
+            f"""
+            CREATE INDEX idx_examples_sense_id_example_order
+            ON {EXAMPLES}(sense_id, example_order);
+            """
+        )
+
+        cursor.execute(
+            f"""
+            CREATE INDEX idx_cross_refs_entry_id_ref_order
+            ON {CROSS_REFS}(entry_id, ref_order);
+            """
+        )
+
         connection.close()
         return True
     except sqlite3.Error as e:
