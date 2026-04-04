@@ -49,3 +49,20 @@ export async function getPrefixes(query, signal) {
     return [];
   }
 }
+
+export async function health_check(signal = null) {
+  const link = "/api/qaamuus/health";
+
+  try {
+    const response = await fetch(link, { signal });
+
+    if (!response.ok) {
+      throw new Error("Server health check failed");
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("Health check failed:", error);
+    throw error; // ← IMPORTANT
+  }
+}

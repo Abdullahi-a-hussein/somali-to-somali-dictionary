@@ -23,6 +23,8 @@ export const metadata = {
     "Somali lexicon",
     "Qaamuus Afsomali",
     "qaamuuska Afka Soomaaliga",
+    "Dictionary Somali",
+    "Dictionary Soomaali",
   ],
   authors: [{ name: "Qaamuuska Soomaaliga Team" }],
   creator: "Qaamuuska Soomaaliga",
@@ -76,22 +78,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  if (typeof window !== "undefined") {
-    // Disable Chrome translation popup
-    document.documentElement.setAttribute("translate", "no");
-
-    // Attempt to remove existing translation banners injected by Google
-    const observer = new MutationObserver(() => {
-      const translateBar = document.querySelector(
-        ".goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb, .VIpgJd-ZVi9od-xl07Ob",
-      );
-      if (translateBar) translateBar.remove();
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
   return (
-    <html lang="so" translate="no" suppressContentEditableWarning>
+    <html lang="so" translate="no" suppressHydrationWarning>
       <head>
         {/* Apply dark mode immediately before hydration */}
         <script

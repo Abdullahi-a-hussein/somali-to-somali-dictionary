@@ -50,6 +50,15 @@ def verify_internal_key(x_api_key: str = Header(None)):
 
 # --- API Endpoints ---
 
+# Check if backened api is health
+
+@app.get("/health")
+def health(x_api_key: str = Header(None)):
+    if not (ENV == "development"):
+        verify_internal_key(x_api_key)
+    return {"status": "ok"}
+
+
 @app.get("/qaamuus/suggest/{prefix}", response_model=list[list[str]])
 def suggest(prefix: str, x_api_key: str = Header(None)):
     """Return suggested Somali words for a given prefix."""
@@ -126,11 +135,13 @@ def define(word: str, x_api_key: str = Header(None)):
 
 @app.get("/qaamuus/clean/find/{word}")
 def find_entry(word: str, x_api_key: str = Header(None)):
-    verify_internal_key(x_api_key)
+    if not (ENV == "development"):
+        verify_internal_key(x_api_key)
     return find_word(word)
 
 
 @app.get("/qaamuus/clean/suggest/{prefix}")
 def get_prefex(prefix: str, x_api_key: str = Header(None)):
-    verify_internal_key(x_api_key)
+    if not (ENV == "development"):
+        verify_internal_key(x_api_key)
     return get_starting_at(prefix.lower())

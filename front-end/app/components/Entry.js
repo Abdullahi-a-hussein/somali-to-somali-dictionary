@@ -1,3 +1,5 @@
+"use client";
+
 function Sense({ sense }) {
   const { examples } = sense;
   return (
