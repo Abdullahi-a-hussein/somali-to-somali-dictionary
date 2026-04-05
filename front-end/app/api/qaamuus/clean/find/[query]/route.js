@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET(request, { params }) {
   const { query } = await params;
   const API_URL = process.env.API_URL;
-  const API_KEY = process.env.API_URL;
+  const API_KEY = process.env.API_KEY;
 
   try {
     const link = `${API_URL}/qaamuus/clean/find/${query}`;
