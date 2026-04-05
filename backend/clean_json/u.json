@@ -1,0 +1,5274 @@
+[
+  {
+    "headword": "u",
+    "pos": "Magac Dheddig (u')",
+    "senses": [
+      {
+        "definition": "Xarafka labaatanaad ee alifba'da af soomaaliga, waana shaqal.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "u",
+    "pos": "Horyaale (naxwe)",
+    "senses": [
+      {
+        "definition": "Qurub lagu isticmaalo falka bidixdiisa: a) qurub la xiriira jiho la aado. ; b) qurub la xiriira qofka loo aado. ; c) qurub la xiriira qof ama shay daraaddiis wax loo sameeyo. ; d) qurub la xiriira habka ama sababta wax loo sameeyo. , ; e) ugu: qurubyo lagu cabbiro kalasarraynta.",
+        "examples": [
+          "Halkaa u orod!",
+          "Cali baan u tagay",
+          "Naagta aqal u dhis!",
+          "Si wanaagsan u samee!",
+          "Maxaad u soo iibsatay?",
+          "Wiilasha asaga ayaa ugu wanaagsan"
+        ]
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dhasha yaryar ee xoolaha iyo dadka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubax",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Qaybaha geedka qayb ka mid ah oo xubnaha dhalidda iyo abuurku soo maraan; waa caleemo midabyo badan oo qurxoon; xay; man.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubaxaysad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ubaxaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysasho"
+    ]
+  },
+  {
+    "headword": "ubaxaysasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ubaxayso. la-mid ubaxaysad, ubaxaysi, ubxaysad, ubxaysasho, ubxaysi",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysad"
+    ]
+  },
+  {
+    "headword": "ubaxaysi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ubaxaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysasho"
+    ]
+  },
+  {
+    "headword": "ubaxayso",
+    "pos": "Fal Magudbe (ubaxaystay, ubaxaysatay)",
+    "senses": [
+      {
+        "definition": "Ubax yeelasho (geed). la-mid ubxayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubxayso"
+    ]
+  },
+  {
+    "headword": "ubaxdhig",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dhigidda la dhigo meelo taariikhi ah ubax.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubaxley",
+    "pos": "Magac Dheddig (Botoni)",
+    "senses": [
+      {
+        "definition": "Dhirta ubaxa leh. Ubaxleydu waa muuqaallada dhirta shiiqisa ee maanta. Waxa laga helaa dhismayaasha ugu sareeya boqortooyada dhirta, taas oo u suurto gelisa inay ku noolaadaan sabooyin kala duwan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubaxoobid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ubaxow. la-mid ubxoobid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubxoobid"
+    ]
+  },
+  {
+    "headword": "ubaxow",
+    "pos": "Fal Magudbe (ubaxoobay, ubaxowday; -oobi)",
+    "senses": [
+      {
+        "definition": "Ubax dhalid (geed). la-mid ubxow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubxow"
+    ]
+  },
+  {
+    "headword": "ubbo",
+    "pos": "Magac Dheddig (ubbooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Weel badanaa argeeg ka samaysan oo sal ballaaran iyo qoor dhuuban oo weesada lagu shubto.",
+        "examples": []
+      },
+      {
+        "definition": "Quluc.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubbo-ubax",
+    "pos": "Magac Dheddig (ubbo-ubaxo, Magac Dheddig) (Botoni)",
+    "senses": [
+      {
+        "definition": "Qaybta dheddigga ee ubaxa, taas oo ka kooban hal kaarbale, ama koox kaarbale ah.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubuc",
+    "pos": "Magac Dheddig (ubucyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Uurkujir. la-mid oboc.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "oboc"
+    ]
+  },
+  {
+    "headword": "ubuc",
+    "pos": "Magac Dheddig (ubucyo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Qaybta hoose ee jidhka xayawaanka. Waxay ka koobantahay caloosha, mindhicirrada iyo organnada qashinsaarka iyo taranka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubur",
+    "pos": "Magac Dheddig (uburro, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Xumbo adag, oo cad, oo awrka qooqan afkiisa ka timaadda. la-mid abur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "abur"
+    ]
+  },
+  {
+    "headword": "uburi",
+    "pos": "Fal Gudbe (uburiyay, uburisay)",
+    "senses": [
+      {
+        "definition": "Awr qooqan, ubur afka ka keenid. la-mid aburi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aburi"
+    ]
+  },
+  {
+    "headword": "uburin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uburi. la-mid aburin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aburin"
+    ]
+  },
+  {
+    "headword": "ubxaysad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ubaxaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysasho"
+    ]
+  },
+  {
+    "headword": "ubxaysasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ubaxaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysasho"
+    ]
+  },
+  {
+    "headword": "ubxaysi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ubaxaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxaysasho"
+    ]
+  },
+  {
+    "headword": "ubxayso",
+    "pos": "Fal Magudbe (ubxaystay, ubxaysatay)",
+    "senses": [
+      {
+        "definition": "la-mid ubaxayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxayso"
+    ]
+  },
+  {
+    "headword": "ubxi",
+    "pos": "Fal Magudbe (ubxiyay, ubxisay)",
+    "senses": [
+      {
+        "definition": "Ubax yeelasho (geed).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ubxin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ubxi. la-mid ubxis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubxis"
+    ]
+  },
+  {
+    "headword": "ubxis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ubxin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubxin"
+    ]
+  },
+  {
+    "headword": "ubxoobid",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ubaxoobid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxoobid"
+    ]
+  },
+  {
+    "headword": "ubxow",
+    "pos": "Fal Magudbe (ubxoobay, ubxowday; -oobi)",
+    "senses": [
+      {
+        "definition": "la-mid ubaxow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ubaxow"
+    ]
+  },
+  {
+    "headword": "udaabtahays",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Geed geedaha sabuulka leh ka mid ah; gowracato. la-mid ugaabdays.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaabdays"
+    ]
+  },
+  {
+    "headword": "udgi",
+    "pos": "Fal Gudbe (udgiyay, udgisay)",
+    "senses": [
+      {
+        "definition": "Wax caraf u yeelid. la-mid udgoonee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonee"
+    ]
+  },
+  {
+    "headword": "udgid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udug.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udgin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udgi. la-mid udgoonayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonayn"
+    ]
+  },
+  {
+    "headword": "udgoon",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Ur la jeclaysto oo carfoon.",
+        "examples": []
+      },
+      {
+        "definition": "Waxyaabo la shito ama lays marsho oo carfoon; udug.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udgoon",
+    "pos": "Fal magudbe (udgoonaa, udgoonayd)",
+    "senses": [
+      {
+        "definition": "Wax ur la jecleysto leh ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udgoonaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udgoon. la-mid udgoonaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonaansho"
+    ]
+  },
+  {
+    "headword": "udgoonaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid udgoonaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonaan"
+    ]
+  },
+  {
+    "headword": "udgoonayn",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid udgin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgin"
+    ]
+  },
+  {
+    "headword": "udgoonee",
+    "pos": "Fal Gudbe (udgooneeyay, udgooneysay)",
+    "senses": [
+      {
+        "definition": "la-mid udgi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgi"
+    ]
+  },
+  {
+    "headword": "udgoonsad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid udgoonsasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonsasho"
+    ]
+  },
+  {
+    "headword": "udgoonsasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udgoonso. la-mid udgoonsad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udgoonsad"
+    ]
+  },
+  {
+    "headword": "udgoonso",
+    "pos": "Fal Magudbe (udgoonsaday, udgoonsatay)",
+    "senses": [
+      {
+        "definition": "Udgoon isku shubid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udo",
+    "pos": "Magac Dheddig (udooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Saxaro.",
+        "examples": []
+      },
+      {
+        "definition": "Cudur geela dhabxanagga kaga dhaca.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udub",
+    "pos": "Magac Lab (udbo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "1.Tiir xooggan, farraarro leh oo dhismaha aqal soomaaliga lagu adkeeyo.",
+        "examples": []
+      },
+      {
+        "definition": "Tiirar badan oo meel wada yaal.",
+        "examples": []
+      },
+      {
+        "definition": "Summad geela lagu dhigo, qaab udub kor u jeeda ah leh oo meelo kala duwan looga dhigo; kabaal.",
+        "examples": []
+      },
+      {
+        "definition": "Dhigo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udubcad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Qoys markaas aqal galay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udubdhexaad",
+    "pos": "Magac Lab (udubdhexaado/-dyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Udub dheer oo aqlka dhexdiisa la suro si uu u adkeeyo dhismaha aqalka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udubxoog",
+    "pos": "Magac Lab (udubxoogyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Labada udub oo irridda aqalka lagu dhiso midkood.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udug",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Ur la jecleysto.",
+        "examples": []
+      },
+      {
+        "definition": "Wax ur la jecleysto leh oo la shito ama lays mariyo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udug",
+    "pos": "Fal Magudbe (udgay, udugtay)",
+    "senses": [
+      {
+        "definition": "Wax caraf la jeclaysto yeelasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udullub",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Socod cagajiid ah oo ay sameeyaan dad jirro, caro iwm hayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udullub",
+    "pos": "Fal Magudbe (udullubay, udullubtay)",
+    "senses": [
+      {
+        "definition": "Qof jirro, caro iwm la cagajiidid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udullubi",
+    "pos": "Fal Gudbe (udullubiyay, udullubisay)",
+    "senses": [
+      {
+        "definition": "Nafley jirran si tartiib ah u wadid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udullubid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udullub.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "udullubin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg udullubi. la-mid udullubis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udullubis"
+    ]
+  },
+  {
+    "headword": "udullubis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid udullubin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udullubin"
+    ]
+  },
+  {
+    "headword": "uduuf",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Gufar; qashin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uduufaa",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "Neef yar (siiba nayl) oo caato ah.",
+        "examples": []
+      },
+      {
+        "definition": "Cunug yar oo caato ah.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uduufo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Wax kasta intiisa liidata.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uf",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Faddare; qurun.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uf",
+    "pos": "Erey dareen",
+    "senses": [
+      {
+        "definition": "Eray la dhaho kolka ur qurmuun la dareemo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ufaayow",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "Cudur raagay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ufo",
+    "pos": "Magac Dheddig (ufooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Dabaysha roobka ka soo horreysa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ufoo",
+    "pos": "Fal Magudbe (ufoooday, ufoootay)",
+    "senses": [
+      {
+        "definition": "Ka siqasho; ka yaqyaqsasho.",
+        "examples": []
+      },
+      {
+        "definition": "Ka ufoo: wax ka tanaasulid ama ka fogaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ufood",
+    "pos": "magac Fal Lab",
+    "senses": [
+      {
+        "definition": "eeg ufoo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ufuq",
+    "pos": "Magac Lab (ufuqyo, Magac Dheddig) (juqr.)",
+    "senses": [
+      {
+        "definition": "Xarriiqa lagu sheegi karo inay wareegsantahay oo xadeysa aragga eegaha, kaas oo ah dhulka dushiisa ama badda dusheeda, meesha dhulka ama baddu ay u muuqdaan inay cirka kula kulmaan. Ogaanta ufuqu waxay ku xirantahay joogga eegaha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ug",
+    "pos": "Fal Gudbe (ugay, ugtay)",
+    "senses": [
+      {
+        "definition": "Ku ug: wax dab ku qallajin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaabdays",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid udaabtahays.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "udaabtahays"
+    ]
+  },
+  {
+    "headword": "ugaadhsade",
+    "pos": "Magac Lab (ugaadhsadayaal, Magac Lab/Dheddig)",
+    "senses": [
+      {
+        "definition": "Xayawan u ugaadhasada xayawaannada kale cunto ahaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaar",
+    "pos": "Magac Dheddig Urur",
+    "senses": [
+      {
+        "definition": "Nafley banjoog ah oo hilibkeeda la cuno sida biciidka, deerada, iwm.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaar",
+    "pos": "Fal Gudbe (ugaaray, ugaartay)",
+    "senses": [
+      {
+        "definition": "Ugaar dilasho (qof). la-mid ugaarso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarso"
+    ]
+  },
+  {
+    "headword": "ugaarasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaarso. la-mid ugaarsasho, ugaarsi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarsasho"
+    ]
+  },
+  {
+    "headword": "ugaarayn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaaree.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaaree",
+    "pos": "Fal Gudbe (ugaareeyay, ugaaraysay)",
+    "senses": [
+      {
+        "definition": "Dabjoob in ay ugaar noqoto gayeysiin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaarid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaar.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaaro",
+    "pos": "Fal Gudbe (ugaartay, ugaaratay)",
+    "senses": [
+      {
+        "definition": "la-mid ugaarso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarso"
+    ]
+  },
+  {
+    "headword": "ugaaroobid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaarow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaarow",
+    "pos": "Fal Magudbe (ugaaroobay, ugaarowday; -oobi)",
+    "senses": [
+      {
+        "definition": "Ugaar noqosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaarsad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ugaarasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarasho"
+    ]
+  },
+  {
+    "headword": "ugaarsasho",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaarso. la-mid ugaarasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarasho"
+    ]
+  },
+  {
+    "headword": "ugaarsato",
+    "pos": "Magac Dheddig Urur",
+    "senses": [
+      {
+        "definition": "Dad ugaarta ugaarsada.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaarsi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ugaarasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaarasho"
+    ]
+  },
+  {
+    "headword": "ugaarso",
+    "pos": "Fal Gudbe (ugaarsaday, ugaarsatay)",
+    "senses": [
+      {
+        "definition": "Ugaar doonasho. la-mid ugaaro.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugaaro"
+    ]
+  },
+  {
+    "headword": "ugaas",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Nin tol madaxnimadiisa loo caleemasaaray.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaasee",
+    "pos": "Fal Gudbe (ugaaseeyay, ugaaseysay)",
+    "senses": [
+      {
+        "definition": "Qof ugaas (is)ka dhigid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaaseyn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugaasee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaasnimo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Ugaas ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugan",
+    "pos": "Fal magudbe (ugnaa, ugnayd)",
+    "senses": [
+      {
+        "definition": "Weel wax dab lagu qallajiyey ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugar",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Inan.",
+        "examples": []
+      },
+      {
+        "definition": "Harag xoolaad oo la idiimay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugar",
+    "pos": "Magac Dheddig (ugaro, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Kiish ama boorso harag ka samaysan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugax",
+    "pos": "Magac Dheddig Urur (ugxaan, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Shay kakoonsan, qolof adag oo ay dhasho nafleyda inta aan naasleyda ahayn, oo uu ku jiro abuurka ilmaha iyo nafaqadii korin lahayd; ukun.",
+        "examples": []
+      },
+      {
+        "definition": "Unug dheddig oo ka soo go'a ugxiyaha naasleyda dheddig oo marka uu bacrimiyo unugmaniga labi ilmo ka abuurmaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugax",
+    "pos": "Magac Dheddig (ugxanno, Magac Dheddig) (Baayologi)",
+    "senses": [
+      {
+        "definition": "Unug taran oo qaangadh ah oo laga helo xayawaanka dheddig, kaasi oo uu saaroo ugxansiduhu.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugaxlay",
+    "pos": "Magac Dheddig (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Xubinta taranka ee ugu muhiimsan xagga dheddigga oo soo saarta unug-ukumeed iyo hormoonnada istroojinka kaltan toosan kaddib markii ay ku dhacaan hormoonnada goonadotroofiin loo yaqaan oo laga siidaayo qoqobka hore ee qanjirdhiiqa bitiwitariga waxa jira laba ugxeeye oo ku yaal qaybta hoose ee uurkujirtada, labada dhinac ee ilmosidaha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugbaad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dhir roob ku da'ay oo baxday oo aan cidi daaqin.",
+        "examples": []
+      },
+      {
+        "definition": "Dhul weli ugub ah.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugbaadsasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugbaadso. la-mid ugbaadsi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugbaadsi"
+    ]
+  },
+  {
+    "headword": "ugbaadsi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ugbaadsasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugbaadsasho"
+    ]
+  },
+  {
+    "headword": "ugbaadso",
+    "pos": "Fal Magudbe (ugbaadsaday, ugbaadsatay)",
+    "senses": [
+      {
+        "definition": "Qof ugbaad doonasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugbaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugub. la-mid ugbaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugbaansho"
+    ]
+  },
+  {
+    "headword": "ugbaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ugbaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugbaan"
+    ]
+  },
+  {
+    "headword": "ugeyb",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Riyaha intooda jirta sannad ka kor dhalmana aan gaarin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ug.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugnaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ugan. la-mid ugnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugnaansho"
+    ]
+  },
+  {
+    "headword": "ugnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ugnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ugnaan"
+    ]
+  },
+  {
+    "headword": "ugu hooseeye",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Qiimaha ugu yar ama ugu hooseeya.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugub",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "Dhul dihin oo aan weli laga xoojin; cusayb.",
+        "examples": []
+      },
+      {
+        "definition": "Naflay dheddig oo aan weli curan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugub",
+    "pos": "Fal magudbe (ugbaa, ugbayd)",
+    "senses": [
+      {
+        "definition": "Wax aan weli curan ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugubi",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Shimbir yar oo midabkeeda bey ah oo dhulka uun ku socota.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugubnimo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Ugub ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uguf",
+    "pos": "Magac Lab (ugufyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Sabuul meseggo, oo qaaday cudur ama biyo la'aan heshay awgeed, oo aan yeelan badar fiican.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugufaa",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dibi laba jir ah.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugu-hooseeye",
+    "pos": "Magac Lab (ugu-hooseeyayaal, Magac Lab/Dheddig) (xisaab)",
+    "senses": [
+      {
+        "definition": "Bar ku taalla garaaf fansaar taas oo leh qiimaha ugu hooseeya ee ku dhex jira gaalis. Haddii fansaarku yahay xood si joogta ah isu haysta, u hooseeyaha fansaarku waa bar noqod; taas oo ah tiirada taabtaha marka loo eego xoodka ay si joogto ah isaga beddesho min togane ilaa tabane iyada oo maraysa eber.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugunji",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Liin, bambeelmo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugxaan",
+    "pos": "Magac Dheddig Wadar",
+    "senses": [
+      {
+        "definition": "eeg ugax.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugxanayn",
+    "pos": "Magac Dheddig (Baayologi)",
+    "senses": [
+      {
+        "definition": "Sii daynta ugxanta ka timaada ugxansidaha. Unug ugxaneedka ku dhex koraya goonkiisa wuxuu tegaa ugxansidaha dushiisa; marka uu qaangaadho waxa laga soo daayaa goonka iyada oo lagu sii daynayo moqorka jidhka, halkaas oo laga gudbiyo marin ubxaneedka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugxandhalid",
+    "pos": "Magac Dheddig (Baayologi)",
+    "senses": [
+      {
+        "definition": "Taran ugxanta bacrinsani ay ku korto kuna dillaacdo marin ugxaneedka hooyada.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugxanside",
+    "pos": "Magac Lab (ugxansidayaal, Magac Lab/Dheddig) (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Organka taranka ee dheddigga xayawaanka kaas oo soo saara ugxanta.",
+        "examples": []
+      },
+      {
+        "definition": "Salka hulan ee kaarbalka ubaxa, kaas oo ka kooban hal ama in ka badan oo ugxan side yare. Bacriminta kaddib, derbiga ugxansiduhu wuxuu u koraa xagga midhaha isaagoo daboolaya iniinyaha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ugxanside-yare",
+    "pos": "Magac Lab (ugxanside-yarayaal, Magac Lab/Dheddig) (Botoni)",
+    "senses": [
+      {
+        "definition": "Qaybta organnada taranka dheddigga ee iniinyaha geedka, taas oo ka kooban bu'da, kiish uurjiif iyo lakab ugxaneedya.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ujeeddo",
+    "pos": "Magac Dheddig (ujeeddooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Macnaha looga danleeyahay hadal, fal, hadaf iwm.",
+        "examples": []
+      },
+      {
+        "definition": "Dulucda qoraal rasmi ah ama dood. la-mid ulajeeddo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulajeeddo"
+    ]
+  },
+  {
+    "headword": "ujro",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Lacag ama wax kale oo qiimo leh oo shaqo la qabtay lagu bixiyo ama laga qaato. la-mid ujuuro.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ujuuro"
+    ]
+  },
+  {
+    "headword": "ujuuro",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ujro.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ujro"
+    ]
+  },
+  {
+    "headword": "ukun",
+    "pos": "Magac Dheddig Urur (ukumo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Shay kakoonsan, qolof adag oo ay dhasho nafleyda inta aan naasleyda ahayn, oo uu ku jiro abuurkii ilmaha iyo nafaqadii korin lahayd.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ul",
+    "pos": "Magac Dheddig (ulo, Magac Lab) (ulo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Qori dhuuban, geedaha laga goosto oo loo qaato in laysku daafaco ama xoolaha lagu raaco.",
+        "examples": []
+      },
+      {
+        "definition": "Lo' tiradeedu boqol (100) gaartay.",
+        "examples": []
+      },
+      {
+        "definition": "Tiro lo' ah oo gaar isula soofta.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ulaaxi",
+    "pos": "Fal Magudbe (ulaaxiyay, ulaaxisay)",
+    "senses": [
+      {
+        "definition": "Sida neef caato ah oo biyo ka dhergey uu u socdo, u socosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ulaaxin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ulaaxi. la-mid ulaaxis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulaaxis"
+    ]
+  },
+  {
+    "headword": "ulaaxis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ulaaxin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulaaxin"
+    ]
+  },
+  {
+    "headword": "ulajeeddo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ujeeddo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ujeeddo"
+    ]
+  },
+  {
+    "headword": "ulakac",
+    "pos": "Magac Lab Falkaab",
+    "senses": [
+      {
+        "definition": "Samaynta fal kas iyo ogaal loo sameeyo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ulayn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ulee. la-mid ulays.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulays"
+    ]
+  },
+  {
+    "headword": "ulays",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ulayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulayn"
+    ]
+  },
+  {
+    "headword": "ulaysi-dagiiran",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Waddo halka ay ka billaabanaysa u ballaaran, halka ay ku dhammaanaysana u ciriiryoon oo dagiiranka lagu soo qumiyo si ay ugu ururaan edegga. Mur-dagiiran.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ulee",
+    "pos": "Fal Gudbe (uleeyay, ulaysay)",
+    "senses": [
+      {
+        "definition": "Wax ul la dhicid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uleex",
+    "pos": "Fal Magudbe (uleexay, uleexday)",
+    "senses": [
+      {
+        "definition": "Aayar u socosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uleexid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uleex.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ulootamid",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ultamid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultamid"
+    ]
+  },
+  {
+    "headword": "ulootan",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ultamid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultamid"
+    ]
+  },
+  {
+    "headword": "ulootan",
+    "pos": "Fal Magudbe (ulootamay, ulootantay)",
+    "senses": [
+      {
+        "definition": "la-mid ultan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultan"
+    ]
+  },
+  {
+    "headword": "ultamid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ultan. la-mid ulootamid, ulootan, ultan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulootamid"
+    ]
+  },
+  {
+    "headword": "ultan",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ultamid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultamid"
+    ]
+  },
+  {
+    "headword": "ultan",
+    "pos": "Fal Magudbe (ultamay, ultantay; -ami)",
+    "senses": [
+      {
+        "definition": "Laba qof ama ka badan cayaar ulo yaryar laysla dhacayo ku tartamid. la-mid ulootan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ulootan"
+    ]
+  },
+  {
+    "headword": "ultansii",
+    "pos": "Fal Gudbe (ultansiiiyay, ultansiiisay)",
+    "senses": [
+      {
+        "definition": "Laba qof ama ka badan ula yaryar oo laysla dhaco ku tartansiin (ciyaar).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ultansiin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ultansii. la-mid ultansiis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultansiis"
+    ]
+  },
+  {
+    "headword": "ultansiis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ultansiin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ultansiin"
+    ]
+  },
+  {
+    "headword": "uluufaad",
+    "pos": "Magac Lab tiraale",
+    "senses": [
+      {
+        "definition": "Tiro kumanyaal gaarta.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umaad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Geeri, mawd, dhimasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umaad",
+    "pos": "Fal Magudbe (umaaday, umaadday)",
+    "senses": [
+      {
+        "definition": "Nafley dhimasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umaadad",
+    "pos": "Fal Gudbe (umaadaday, umaadadday)",
+    "senses": [
+      {
+        "definition": "Si hanti loo unko wax meel dhigid. la-mid amaamud.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamud"
+    ]
+  },
+  {
+    "headword": "umaadid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg umaad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umaamad",
+    "pos": "Fal Gudbe (umaamaday, umaamadday)",
+    "senses": [
+      {
+        "definition": "Maal aruursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umaamadan",
+    "pos": "Fal magudbe (umaamadnaa, umaamadnayd)",
+    "senses": [
+      {
+        "definition": "la-mid amaamudan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamudan"
+    ]
+  },
+  {
+    "headword": "umaamade",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid amaamude.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamude"
+    ]
+  },
+  {
+    "headword": "umaamadid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg umaamad. la-mid amaamudid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamudid"
+    ]
+  },
+  {
+    "headword": "umaamudnaan",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid amaamuudnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamuudnaan"
+    ]
+  },
+  {
+    "headword": "umaamudnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid amaamudnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "amaamudnaan"
+    ]
+  },
+  {
+    "headword": "umal",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Caro ciilqab ah.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umal",
+    "pos": "Fal Magudbe (umlay, umashay; -mli)",
+    "senses": [
+      {
+        "definition": "Caro ciilqab leh dareemid. la-mid umashoo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "umashoo"
+    ]
+  },
+  {
+    "headword": "umashoo",
+    "pos": "Fal Magudbe (umashoooday, umashoootay)",
+    "senses": [
+      {
+        "definition": "Qof dareema caro ciilqab ah noqosho. la-mid umal.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "umal"
+    ]
+  },
+  {
+    "headword": "umashood",
+    "pos": "magac Fal Lab",
+    "senses": [
+      {
+        "definition": "la-mid umlid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "umlid"
+    ]
+  },
+  {
+    "headword": "umlid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg umal. la-mid umashood.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "umashood"
+    ]
+  },
+  {
+    "headword": "ummaag",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Xirmo ah cawska rarada laga sameeyo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummad",
+    "pos": "Magac Dheddig (ummado, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Dad meel wada deggan oo dhaqan iyo dhaqaale wadaag ah.",
+        "examples": []
+      },
+      {
+        "definition": "Dad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummadnimo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Ummad ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummi",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "ummi ah: qof aan wax qori karin waxna akhrin karin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "umminnimo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Ummi ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummiya",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Shareero.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummul",
+    "pos": "Magac Dheddig (ummulo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Qof dumar ah oo kolkaas ilmo dhashay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummul",
+    "pos": "Fal Magudbe (ummulay, ummushay)",
+    "senses": [
+      {
+        "definition": "Ilmo uur ku jiray dhalid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummuladdoox",
+    "pos": "Magac Lab (ummuladdooxyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Dilaa aan cidna u nixin oo wuxuu arkaba dila.",
+        "examples": []
+      },
+      {
+        "definition": "Colaad aan cidna la reebin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulbax",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dhammaadka afartanka casho ee ugu dambeeya kolka ay hooyadu ummusho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulbax",
+    "pos": "Fal Magudbe (ummulbaxay, ummulbaxday; -bixi)",
+    "senses": [
+      {
+        "definition": "Afartanka casho ee ummusha lagu jiray dhammaysasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulbixi",
+    "pos": "Fal Gudbe (ummulbixiyay, ummulbixisay)",
+    "senses": [
+      {
+        "definition": "Hooyo dhashay, intay afartanka casho ee ummusha ka dhammaysanayso u adeegid; nafaqgayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulbixid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ummulbax.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulbixin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ummulbixi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummuli",
+    "pos": "Fal Gudbe (ummuliyay, ummulisay)",
+    "senses": [
+      {
+        "definition": "Ilmo ka dhalin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ummul.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ummuli. la-mid ummulis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ummulis"
+    ]
+  },
+  {
+    "headword": "ummulis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ummulin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ummulin"
+    ]
+  },
+  {
+    "headword": "ummuliso",
+    "pos": "Magac Dheddig (ummulisooyin, ml.)",
+    "senses": [
+      {
+        "definition": "Haweeney aqoon u leh sida loo dhaliyo naagaha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummuliye",
+    "pos": "Magac Lab (ummuliyayaal, Magac Lab/Dheddig)",
+    "senses": [
+      {
+        "definition": "Nin yaqaan sida loo dhaliyo ummuliyo haweenka ummulaya.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulow",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Cudur ku dhaca dumarka ummula.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulraac",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Geerida ku timaada haweeney ummulaysa ama ummushay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulraac",
+    "pos": "Fal Magudbe (ummulraacay, ummulraacday)",
+    "senses": [
+      {
+        "definition": "Haweeney ummushay dhimasho. la-mid ummulraaco.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ummulraaco"
+    ]
+  },
+  {
+    "headword": "ummulraacasho",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ummulraacid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ummulraacid"
+    ]
+  },
+  {
+    "headword": "ummulraacid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ummulraac.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ummulraaco",
+    "pos": "Fal Magudbe (ummulraacday, ummulraacatay)",
+    "senses": [
+      {
+        "definition": "la-mid ummulraac.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ummulraac"
+    ]
+  },
+  {
+    "headword": "ummuur",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ammuur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ammuur"
+    ]
+  },
+  {
+    "headword": "ummuuraysan",
+    "pos": "Fal magudbe (ummuuraysnaa, ummuuraysnayd)",
+    "senses": [
+      {
+        "definition": "la-mid ammuureysan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ammuureysan"
+    ]
+  },
+  {
+    "headword": "ummuuraysnaan",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ammuureysnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ammuureysnaan"
+    ]
+  },
+  {
+    "headword": "ummuuraysnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ammuureysnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ammuureysnaansho"
+    ]
+  },
+  {
+    "headword": "uneexo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aneexo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aneexo"
+    ]
+  },
+  {
+    "headword": "unfaxyee",
+    "pos": "Fal Magudbe (unfaxyeeyay, unfaxyeysay)",
+    "senses": [
+      {
+        "definition": "Neef ari ah unfaxyo keenid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unfaxyeyn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unfaxyee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unfaxyo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dhiig ka yimaada neef ari ah oo bilihii ugu horreeyay dhiciyay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unfo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Qarandi, saddexsulley.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unkad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid unkasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unkasho"
+    ]
+  },
+  {
+    "headword": "unkamid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unkan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unkan",
+    "pos": "Fal Magudbe (unkamay, unkantay; -ami)",
+    "senses": [
+      {
+        "definition": "Wax la unkay noqosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unkan",
+    "pos": "Fal magudbe (unkanaa, unkanayd)",
+    "senses": [
+      {
+        "definition": "Wax la unka ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unkanaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unkan. la-mid unkanaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unkanaansho"
+    ]
+  },
+  {
+    "headword": "unkanaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid unkanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unkanaan"
+    ]
+  },
+  {
+    "headword": "unkasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unko. la-mid unkad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unkad"
+    ]
+  },
+  {
+    "headword": "unkid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unug.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unko",
+    "pos": "Fal Gudbe (unkaday, unkatay)",
+    "senses": [
+      {
+        "definition": "Weel toliddiisa ama caw, harrar iwm falkintooda billaabid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unkod",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid onkod.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "onkod"
+    ]
+  },
+  {
+    "headword": "unsar",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Wasakh yar oo ku jirta weel hoore ku jira salkiisa. la-mid usar.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "usar"
+    ]
+  },
+  {
+    "headword": "untiye",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid yibir.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "yibir"
+    ]
+  },
+  {
+    "headword": "unug",
+    "pos": "Magac Lab (unugyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Wax aan hore u jirin oo la curinayo, bilawga ugu horreeya.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug",
+    "pos": "Magac Lab (unugyo, Magac Dheddig) (Baayologi)",
+    "senses": [
+      {
+        "definition": "Halbeegga salka nolosha ee maatar iyo tamarina ka soo uunmaan, ku beddelmaan, ku kaydsaman, kuna isticmaal galaan. Unug kastaa wuxuu ka koobanyahay walxo cufan oo borotiin ah (borotobalaasam), kuwaas oo u meesiyoobey walax xab oo kale ah (saytobalaasam) iyo bu', kaas oo ay ku jirto DNA.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug",
+    "pos": "Fal Gudbe (unkay, unugday; -nki)",
+    "senses": [
+      {
+        "definition": "Unug samayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug-dareen-dhaqaaq",
+    "pos": "Magac Lab (-gyo ..., Magac Dheddig) (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Unug ama organ soo saara jawaab fisiyoolojyiyeed marka uu nashaad iyo guyo dareen wade.",
+        "examples": [
+          "Muruqyada iyo qanjidhada"
+        ]
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug-dareen-wade",
+    "pos": "Magac Lab (unug-dareen-wadayaal, Magac Lab/Dheddig) (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Unug dheeraaday oo faracyo leh, kaasi oo ah halbeegga aasaaska u ah habdhiska dareenwadka, gaarna u ah gudbinta gujooyinka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unugga cad ee dhiigga",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "eeg liyuukoosayt.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unugga Daaniyal",
+    "pos": "Magac Lab (Fiisikis)",
+    "senses": [
+      {
+        "definition": "Unug aasaasi ah (sida unugga foolt), xoog danab wadihiisuna yahay 1.08 V, lehna qotino maar (+) iyo naxaas ah (-). Unuggan waxa uu leeyahay gudbiye naxaro salfaytah iyo milanka maar salfayt oo kahortaga daahneefeed ka dhaca unugga.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug-gudeed",
+    "pos": "Magac Lab (unug-gudeedyo, Magac Dheddig) (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Unugyada inta u dhaxaysa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug-maskaxeedka dhaqaaqa",
+    "pos": "Magac Lab (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Unugyada sameeya mareennada u dhexeeya maskaxda iyo xubinta dhaqaaqa, (muruqa, lafaha) midkood.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unug-waalid",
+    "pos": "Magac Lab (-gyo ..., Magac Dheddig) (c.nafl.)",
+    "senses": [
+      {
+        "definition": "Unugga ay ka soo farcamaan ama ka samaysmaan unugyada kale marka qaybsanka unugga dhaco.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unugyada dhiigga ee cas cas",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "eeg iritaroosayt.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unugyo badane",
+    "pos": "Magac Lab Urur (unugyo badanayaal, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Noole ka kooban unugyo badan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ununush",
+    "pos": "Magac Lab Urur",
+    "senses": [
+      {
+        "definition": "Waxaruhu marka ay geedo daaqidda bilaabaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unuun",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Madax; kur.",
+        "examples": []
+      },
+      {
+        "definition": "Geed faalala oo qaraha u eg oo bixiya miro dacarta ka sii kharaar oo laysku dhaweeyo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unuungoo",
+    "pos": "Fal Gudbe (unuungoooyay, unuungooysay)",
+    "senses": [
+      {
+        "definition": "Nafley madaxa ka jarid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unuungoyn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unuungoo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "unuunuf",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Af-ku-urursiga cunta yar oo dhulka daadsan afka lagu uruursado. la-mid anaanuf",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "anaanuf"
+    ]
+  },
+  {
+    "headword": "unuunuf",
+    "pos": "Fal Magudbe (unuunufay, unuunuftay)",
+    "senses": [
+      {
+        "definition": "Nafley cunto yar oo dhulka ku daadsan uruursasho. la-mid anaanuf.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "anaanuf"
+    ]
+  },
+  {
+    "headword": "unuunufid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg unuunuf. la-mid anaanufid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "anaanufid"
+    ]
+  },
+  {
+    "headword": "uq",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid cuq.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "cuq"
+    ]
+  },
+  {
+    "headword": "ur",
+    "pos": "Magac Lab (urar, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Wax sanku jecleysto ama necbaysto ee uu dareemo.",
+        "examples": []
+      },
+      {
+        "definition": "Qurun.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ur",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dabayl lixdii bilood doc ka timaadda; neecaw; dabayl.",
+        "examples": []
+      },
+      {
+        "definition": "Dhanka dabayshu ka dhacayso.",
+        "examples": []
+      },
+      {
+        "definition": "la-mid ur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ur"
+    ]
+  },
+  {
+    "headword": "ur",
+    "pos": "Fal Magudbe (uray, urtay)",
+    "senses": [
+      {
+        "definition": "Ur qurmuun yeelasho.",
+        "examples": []
+      },
+      {
+        "definition": "U ur: wax nicid.",
+        "examples": []
+      },
+      {
+        "definition": "U ur: wax ur qurmuun leh dareemid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uraa",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Geed-quwaax ur sillan oo aad u lifaaqoon leh: ur cayayaanka iyo bahal-hoosaadka lagu laayo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uraad",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Saaca iyo waxtarka daaqu leeyahay. la-mid urshi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "urshi"
+    ]
+  },
+  {
+    "headword": "urdhac",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Jihada dabayshu u socoto. la-mid urdhicid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "urdhicid"
+    ]
+  },
+  {
+    "headword": "urdhicid",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid urdhac.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "urdhac"
+    ]
+  },
+  {
+    "headword": "urduf",
+    "pos": "Magac Lab (urdufyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Wax tabar daran oo aan muuqaalkiisu fiicnayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ureed",
+    "pos": "Magac Lab (ureedyo, Magac Dheddig) (Baayologi)",
+    "senses": [
+      {
+        "definition": "Dareenka urta ama dariiqadda wax lagu uriyo; tani oo lagu helo qaabilayaasha urta ama qaabilayaasha ku jira organnada ureed, sida sanka, kuwaas oo xasaasi u ah hawada ama kiimikooyinka ka dhasha biyaha. Nashaadinta qaabilayaashaasi waxay sababtaa inay u gudbiso wararka maskaxda iyaga oo sii maraya dariiqa dareen wadaha ureed.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urgumo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Uurkuhayn; cadaawad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urgun",
+    "pos": "Magac Lab (urgunno, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Hoore adkaaday oo weel salkiisa ku haray, gufar.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uri",
+    "pos": "Fal Gudbe (uriyay, urisay)",
+    "senses": [
+      {
+        "definition": "Wax urkooda dareemid.",
+        "examples": []
+      },
+      {
+        "definition": "Wax qurmin.",
+        "examples": [
+          "Kalluunkii bakhtiyey baddii buu uriyey"
+        ]
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uri.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uris",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Cudur carruurta ka ballaariya madaxa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uriso",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Wax loo akhriyo in laysku nacsiiyo laba qof oo israbta ama is jecel.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urre",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Aboorka kiisa labka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ursad",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Cudur ku dhaca eyga iyo naasleyda la bahda ah oo ay calaamo u tahay biyonicid iyo laystaannimo.",
+        "examples": []
+      },
+      {
+        "definition": "la-mid ursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ursasho"
+    ]
+  },
+  {
+    "headword": "ursamo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dabayshu xagga ay u dhacayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ursasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg urso. la-mid ursad, ursi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ursad"
+    ]
+  },
+  {
+    "headword": "ursato",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Cayayaanka jaad ka mid ah oo doorshaanka ka sii yaryar kana fudfudud oo aan wax qaniinin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urshi",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uraad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uraad"
+    ]
+  },
+  {
+    "headword": "ursi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid ursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ursasho"
+    ]
+  },
+  {
+    "headword": "ursii",
+    "pos": "Fal labagudbe (ursiiiyay, ursiiisay)",
+    "senses": [
+      {
+        "definition": "Wax ur leh cid sanka u saarid.",
+        "examples": []
+      },
+      {
+        "definition": "U",
+        "examples": []
+      },
+      {
+        "definition": "nafley wax nacsiin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "ursiin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ursii.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urso",
+    "pos": "Fal Gudbe (ursaday, ursatay)",
+    "senses": [
+      {
+        "definition": "Wax ur leh sanka saarasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uruf",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "uruf ah: qof jin yar oo gaaban.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urug",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Cudur dadka, xoolaha iyo shimbiraha ku dhaca oo sambabada waxyeeleeya oo xummad badan iyo qufac leh; qaaxo; feero.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urugo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Uurkutaallo; tiiraanyo; caloolxumo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urugoo",
+    "pos": "Fal Magudbe (urugoooday, urugoootay)",
+    "senses": [
+      {
+        "definition": "Tiiraanyo dareemid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urugood",
+    "pos": "magac Fal Lab",
+    "senses": [
+      {
+        "definition": "eeg urugoo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urun",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Xarig dhuuban, dun ka samaysan oo wiilasha yaryar dhexda loogu xiro kaddib marka la gardaadiyo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urur shaqaale",
+    "pos": "Magac Lab (ururro shaqaale, Magac Dheddig) (taariikh)",
+    "senses": [
+      {
+        "definition": "Urur matala xoogsatada, rabo in uu wax ka baddelo xaaladda nolosha, mushaarada iyo lacagta.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urur",
+    "pos": "Magac Lab (ururro, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Seddax horimood oo ciidan ah.",
+        "examples": []
+      },
+      {
+        "definition": "Dad aragti siyaasadeed ku midoobay.",
+        "examples": []
+      },
+      {
+        "definition": "Tiro isku wax ka hadlaysa oo is buuxinaysa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urur",
+    "pos": "Magac Lab (ururro, Magac Dheddig) (Kiimika)",
+    "senses": [
+      {
+        "definition": "Marka la eego tusaha falgalka curiyayaasha, waa tax curiyayaal ah oo kiimika ahaan isu'eg lehna ratibaad elektaroonikaad oo isu'eg. Ururku waa curiyayaasha joog u taxan ku wada jira ee tusaha kalgalka curiyayaasha. Marka la eego kiimikada orgaanikada ah, waa atam ama koox atamyo ah oo xukuma astamaha gaarka ah ee molikiyuulada ku wada jira bah gaar ah.",
+        "examples": []
+      },
+      {
+        "definition": "Ururinta walxo nooc kasta leh. Walxaha sameeya urur waxa lagu magacabaa kutirsaneyaasha ama xubnaha urur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urur",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Xiddigo dhawr ah oo meel isugu yimaada oo isla socda.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urur",
+    "pos": "Fal Magudbe (ururay, ururtay)",
+    "senses": [
+      {
+        "definition": "Nafley tiro badan meel isugu imaansho. la-mid urursan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "urursan"
+    ]
+  },
+  {
+    "headword": "ururi",
+    "pos": "Fal Gudbe (ururiyay, ururisay)",
+    "senses": [
+      {
+        "definition": "Wax meel isugu keenid.",
+        "examples": []
+      },
+      {
+        "definition": "U ururi: kaalmo cid la siinayo dad kala duwan uga qaadid. la-mid aruuri.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruuri"
+    ]
+  },
+  {
+    "headword": "ururid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg urur. la-mid aruurid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurid"
+    ]
+  },
+  {
+    "headword": "ururin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ururi. la-mid aruurin, ururis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurin"
+    ]
+  },
+  {
+    "headword": "ururis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid aruurin, ururin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurin"
+    ]
+  },
+  {
+    "headword": "Ururkii Qaramada",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Urur la sameeyey dagaalkii adduunka ee kowaad kaddib, kasoo loo dhisay horumarinta Iskaashiga caalamiga iyo ka hortagga dagaal, wuxuuna burburiyey dagaalkii II ee Adduunka.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urursamid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid ururid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "ururid"
+    ]
+  },
+  {
+    "headword": "urursan",
+    "pos": "Fal Magudbe (urursamay, urursantay)",
+    "senses": [
+      {
+        "definition": "Wax la ururiyay noqosho. la-mid urur4.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "urur4"
+    ]
+  },
+  {
+    "headword": "urursan",
+    "pos": "Fal magudbe (urursanaa, urursanayd)",
+    "senses": [
+      {
+        "definition": "Wax la ururiyey ahaansho.",
+        "examples": []
+      },
+      {
+        "definition": "Wax aan kala daadsanayn ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "urursanaan",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "eeg urursan. la-mid aruursanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursanaan"
+    ]
+  },
+  {
+    "headword": "urursanaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruursanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursanaan"
+    ]
+  },
+  {
+    "headword": "urursasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg ururso. la-mid aruursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursasho"
+    ]
+  },
+  {
+    "headword": "ururso",
+    "pos": "Fal Gudbe (urursaday, urursatay)",
+    "senses": [
+      {
+        "definition": "Wax kala firirsan meel isugu keensasho. la-mid aruurso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurso"
+    ]
+  },
+  {
+    "headword": "uruur",
+    "pos": "Fal Magudbe (ray, uruurtay)",
+    "senses": [
+      {
+        "definition": "la-mid aruur.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruur"
+    ]
+  },
+  {
+    "headword": "uruuri",
+    "pos": "Fal Gudbe (uruuriyay, uruurisay)",
+    "senses": [
+      {
+        "definition": "la-mid aruuri.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruuri"
+    ]
+  },
+  {
+    "headword": "uruurid",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruurid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurid"
+    ]
+  },
+  {
+    "headword": "uruurin",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruurin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurin"
+    ]
+  },
+  {
+    "headword": "uruuris",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid aruurin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurin"
+    ]
+  },
+  {
+    "headword": "uruursad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid aruursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursasho"
+    ]
+  },
+  {
+    "headword": "uruursan",
+    "pos": "Fal magudbe (uruursanaa, uruursanayd)",
+    "senses": [
+      {
+        "definition": "la-mid aruursan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursan"
+    ]
+  },
+  {
+    "headword": "uruursanaan",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruursanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursanaan"
+    ]
+  },
+  {
+    "headword": "uruursanaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruursanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursanaan"
+    ]
+  },
+  {
+    "headword": "uruursasho",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid aruursasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruursasho"
+    ]
+  },
+  {
+    "headword": "uruurso",
+    "pos": "Fal Gudbe (uruursaday, uruursatay)",
+    "senses": [
+      {
+        "definition": "la-mid aruurso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "aruurso"
+    ]
+  },
+  {
+    "headword": "us",
+    "pos": "Erey dareen",
+    "senses": [
+      {
+        "definition": "Aamus!",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "usar",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid unsar.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unsar"
+    ]
+  },
+  {
+    "headword": "usduurad",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid usduuro.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "usduuro"
+    ]
+  },
+  {
+    "headword": "usduuro",
+    "pos": "Magac Dheddig (usduurooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Dhacdo taariikheed oo sooyaal ah, oo wax laga beddelay qaabkeeda hore. la-mid asduurad, usduurad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "asduurad"
+    ]
+  },
+  {
+    "headword": "uskag",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Wasakh ku taal jir dad ama dhar. la-mid uskug.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uskug"
+    ]
+  },
+  {
+    "headword": "uskagayn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uskagee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uskagee",
+    "pos": "Fal Gudbe (uskageeyay, uskagaysay)",
+    "senses": [
+      {
+        "definition": "Wax uskag u yeelid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uskag-galeen",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Jir dad meesha wasakh qabatinka leh.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uskagoobid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uskagow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uskagow",
+    "pos": "Fal Magudbe (uskagoobay, uskagowday; -oobi)",
+    "senses": [
+      {
+        "definition": "Uskag yeelasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uskug",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uskag.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uskag"
+    ]
+  },
+  {
+    "headword": "ustaad",
+    "pos": "Magac Lab (ustaadyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Macallin; bare. la-mid astaad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "astaad"
+    ]
+  },
+  {
+    "headword": "usur",
+    "pos": "Magac Lab (usurro, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Dhul jiq ah oo aan la mari karin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "utun",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Godob weyn; aano.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uu",
+    "pos": "Magacuyaal Dhimman Yeele",
+    "senses": [
+      {
+        "definition": "Magacuyaal tilmaamaya qofka saddexaad ee kelida lab ah (kan laga hadlayo).",
+        "examples": [
+          "Wuxuu rabaa inuu wax ka barto"
+        ]
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uu",
+    "pos": "Erey dareen",
+    "senses": [
+      {
+        "definition": "Erey dareen oo tilmaamaya wax kedo ah ama wax naxdin ah, iwm.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uub",
+    "pos": "Magac Dheddig (uubo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Carun ka yimaad xubinta taranka ee nafley dhashay.",
+        "examples": []
+      },
+      {
+        "definition": "God dhuuban oo hoos u dheer.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uubatee",
+    "pos": "Fal Magudbe (uubateeyay, uubateysay)",
+    "senses": [
+      {
+        "definition": "Sida uubatada u ciyid.",
+        "examples": []
+      },
+      {
+        "definition": "Qaylo dheer cid maqashiin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uubateyn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uubatee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uubato",
+    "pos": "Magac Dheddig Urur (uubatooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Bahal eeyga u eg: yey; yeey; uuley.",
+        "examples": []
+      },
+      {
+        "definition": "Qaylo dheer.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uubo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uub.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uub"
+    ]
+  },
+  {
+    "headword": "uud",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Daaq; caws.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uufannaa",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uufannays.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uufannays"
+    ]
+  },
+  {
+    "headword": "uufannays",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "uufannays ah: maroodi markaa dhashay ama beriyo jiray.",
+        "examples": []
+      },
+      {
+        "definition": "uufannays ah: dad aan meel loogu hagaago lahayn. la-mid uufannaa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uufannaa"
+    ]
+  },
+  {
+    "headword": "uugaabid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uugaw.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaabo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Qaylo kicin iyo tirtirsi leh oo dad loo jeediyo; guubaabo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaami",
+    "pos": "Fal Gudbe (uugaamiyay, uugaamisay)",
+    "senses": [
+      {
+        "definition": "Geel in uu uugaan sameeyo ku kallifid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaamid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uugaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaamin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uugaami. la-mid uugaamis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uugaamis"
+    ]
+  },
+  {
+    "headword": "uugaamis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uugaamin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uugaamin"
+    ]
+  },
+  {
+    "headword": "uugaamo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uugaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uugaan"
+    ]
+  },
+  {
+    "headword": "uugaan",
+    "pos": "Magac Lab (Magac Lab Urur)",
+    "senses": [
+      {
+        "definition": "Daruuro cokan.",
+        "examples": []
+      },
+      {
+        "definition": "Yabaq, buuq. la-mid uugaamo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uugaamo"
+    ]
+  },
+  {
+    "headword": "uugaan",
+    "pos": "Fal Magudbe (uugaaamay, uugaaantay; -aami)",
+    "senses": [
+      {
+        "definition": "Daruuro cukan cir ku dedmid.",
+        "examples": []
+      },
+      {
+        "definition": "Yabqid; buuqid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaw",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Uugaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugaw",
+    "pos": "Fal Magudbe (uugaway, uugawday)",
+    "senses": [
+      {
+        "definition": "Uugaan samayn (geel).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uugo",
+    "pos": "Magac Dheddig (uugooyin, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Dhawaaq wiilka geela jiraa sameeyo markuu rabo inuu isu ururiyo. la-mid uujo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uujo"
+    ]
+  },
+  {
+    "headword": "uuji",
+    "pos": "Fal Gudbe (uujiyay, uujisay)",
+    "senses": [
+      {
+        "definition": "Uugaan ka keenid (geel).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uujin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uuji. la-mid uujis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uujis"
+    ]
+  },
+  {
+    "headword": "uujis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uujin, uugaw.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uujin"
+    ]
+  },
+  {
+    "headword": "uujo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uugo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uugo"
+    ]
+  },
+  {
+    "headword": "uulayn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uulee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uulee",
+    "pos": "Fal Magudbe (uuleeyay, uulaysay)",
+    "senses": [
+      {
+        "definition": "Qaylo dheer samayn.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuley",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Yeey, uubato.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuman",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Jin, rooxaan.",
+        "examples": []
+      },
+      {
+        "definition": "la-mid uun.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uun"
+    ]
+  },
+  {
+    "headword": "uuman",
+    "pos": "Fal Magudbe (uunmay, uumantay; uunmi)",
+    "senses": [
+      {
+        "definition": "Wax la abuuray noqosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuman",
+    "pos": "Fal magudbe (uunnaa, uunnayd)",
+    "senses": [
+      {
+        "definition": "Wax la abuuray ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uumo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumi saarid",
+    "pos": "Magac Dheddig (Botoni)",
+    "senses": [
+      {
+        "definition": "Biyo lunka dhirta kaas oo ay ku sii daayaan gibilka. Biyo lunku badanaa wuxuu ka dhacaa caleemaha iyaga oo ka baxaya daloolada istomaataha, kaasi oo shaqadiisa ugu weyni tahay isdhaafsiga neefaha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Humri kulul.",
+        "examples": []
+      },
+      {
+        "definition": "Kul; diirimaad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumi",
+    "pos": "Fal Gudbe (uumiyay, uumisay)",
+    "senses": [
+      {
+        "definition": "Wax dab ku diirin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumibax",
+    "pos": "Magac Dheddig (uumibaxyo, Magac Dheddig) (Fiisikis)",
+    "senses": [
+      {
+        "definition": "Isbedelka wejiga hoorku ku noqdo neef ama uumi. Uumibixinta waxay ku dhici kartaa heerkul kasta, dhakhsaheeduna wuxuu la kordhaa heerkulka.",
+        "examples": []
+      },
+      {
+        "definition": "Dariiqadda walaxi isaga beddesho dareere isuguna beddesho heerka uumiga ama biyaha hawada ku jira.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumibax",
+    "pos": "Fal Magudbe (uumibaxay, uumibaxday; -bixi)",
+    "senses": [
+      {
+        "definition": "Hoore la kululeeyey qiiq bixid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumibixid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uumibax.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumibiyood",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Hoore la kululeeyey qiiq ka baxay oo qabow taabtay awgiis biyo isu beddeley.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uun.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumihoorow",
+    "pos": "Magac Lab (Fiisikis)",
+    "senses": [
+      {
+        "definition": "Isbeddelka uumi ama neef ay ku noqoto hoor. Weji-gaddoonkaasi waxa wehesha kul baxa.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumin",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uumi. la-mid uumis.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uumis"
+    ]
+  },
+  {
+    "headword": "uumis",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uumin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uumin"
+    ]
+  },
+  {
+    "headword": "uumitee",
+    "pos": "Fal Gudbe (uumitgeeyay, uumiteysay)",
+    "senses": [
+      {
+        "definition": "Hilib uumito ka dhigid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumiteyn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uumitee.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumito",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Hilib uumi kulul lagu bisleeyey.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uumo",
+    "pos": "Fal Gudbe (uuntay, uumatay)",
+    "senses": [
+      {
+        "definition": "Ilaah wax abuurasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uun",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Wax kastoo Alle uumay.",
+        "examples": []
+      },
+      {
+        "definition": "Uumi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uun",
+    "pos": "Fal Gudbe (uumay, uuntay; uumi)",
+    "senses": [
+      {
+        "definition": "Eebbe wax abuurid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uun",
+    "pos": "Falkaab",
+    "senses": [
+      {
+        "definition": "Keliya.",
+        "examples": [
+          "Carruurta uun caanaha sii"
+        ]
+      },
+      {
+        "definition": "Mid kastaba ha ahaadee. ”Nin uun weyddii”.",
+        "examples": []
+      },
+      {
+        "definition": "Mid aan cayinnayn, mid aan la garanayn.",
+        "examples": [
+          "Wiil uun baa noo sheegay"
+        ]
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uunmid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uuman.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uunnaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uuman. la-mid uunnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uunnaansho"
+    ]
+  },
+  {
+    "headword": "uunnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uunnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uunnaan"
+    ]
+  },
+  {
+    "headword": "uunrays",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dabagaalle; tukulush.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uunsad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uunsasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uunsasho"
+    ]
+  },
+  {
+    "headword": "uunsan",
+    "pos": "Fal magudbe (uunsanaa, uunsanayd)",
+    "senses": [
+      {
+        "definition": "Wax uunsi lagu shiday ahaansho.",
+        "examples": []
+      },
+      {
+        "definition": "Wax la uumiyey ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uunsanaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uunsan. la-mid unsanaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "unsanaansho"
+    ]
+  },
+  {
+    "headword": "uunsanaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uunsanaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uunsanaan"
+    ]
+  },
+  {
+    "headword": "uunsasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uunso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uunsi",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Walxo laysku dardaray oo laysku kariyey, udgoon oo loo qiijiyo in lagu carfiyo jir, dhar ama meel; khumkhum. la-mid uunsasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uunsasho"
+    ]
+  },
+  {
+    "headword": "uunso",
+    "pos": "Fal Magudbe (uunsaday, uunsatay)",
+    "senses": [
+      {
+        "definition": "Uunsi shidasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uur",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Inta u dhaxaysa bogga miskaha iyo laba kelliyood waxa ku jira: beerka, caloosha, xiidmaha iwm.",
+        "examples": []
+      },
+      {
+        "definition": "Ilma galeenka cunuggu ku jira kolka uu dusha ka muuqdo oo calool weyn u ekaado.",
+        "examples": []
+      },
+      {
+        "definition": "Laabta.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurayn",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uuree.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuraysasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurayso",
+    "pos": "Fal Magudbe (uuraystay, uuraysatay)",
+    "senses": [
+      {
+        "definition": "Uur yeelasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurbays",
+    "pos": "Magac Dheddig (uurbaysyo, Magac Lab)",
+    "senses": [
+      {
+        "definition": "Xirmo qaad ah oo ka kooban dhawr laamood.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurdhagax",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Qare adag oo aan la jebin karin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurdhagaxoobid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurdhagaxow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurdhagaxow",
+    "pos": "Fal Magudbe (uurdhagaxoobay, uurdhagaxowday)",
+    "senses": [
+      {
+        "definition": "Uurdhagax noqosho (qare).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurdoox",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Cunugga aan sida caadiga ah u dhalane bogga hooyadiisa laga soo saaray; bogdoox.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuree",
+    "pos": "Fal Gudbe/Magudbe (uureeyay, uuraysay)",
+    "senses": [
+      {
+        "definition": "Uur u yeelid (siiba naag aan la qabin).",
+        "examples": []
+      },
+      {
+        "definition": "Uuro kicin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurgubyoo",
+    "pos": "Fal Magudbe (uurgubyoooday, uurgubyoootay)",
+    "senses": [
+      {
+        "definition": "Tiiraanyo aad ah dareemid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurgubyood",
+    "pos": "magac Fal Lab",
+    "senses": [
+      {
+        "definition": "eeg uurgubyoo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurjiif",
+    "pos": "Magac Lab (uurjiifyo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Ilmaha weli uurka ku jira.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurjiif",
+    "pos": "Magac Lab (uurjiifyo, Magac Dheddig) (Baayologi)",
+    "senses": [
+      {
+        "definition": "Heerka ugu horreeya ee koritaanka xayawaanka, laga soo bilaabo marka ugxanta bacrintay ay bilowdo inay qaybsanto, iyada oo ku jirta organnada taranka ee hooyada ilaa ay ka dillaacayso ama ka dhalanayso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkoole",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Magac ay caan ku yihiin herinta ugaarsatada ah, wuxuuna tilmaamayaa in ay yihiin isku uur oo aanay wax kala qarsan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkubaalle",
+    "pos": "Magac Lab/Dheddig Khabar (uurkubaallayaal, Magac Lab/Dheddig)",
+    "senses": [
+      {
+        "definition": "Qof hibo loo siyey in uu ogaado waxa dhici doona.",
+        "examples": []
+      },
+      {
+        "definition": "Faras ama nin aad u dheereeya.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkucirroole",
+    "pos": "Magac Lab (uurkucirroolayaal, Magac Lab/Dheddig)",
+    "senses": [
+      {
+        "definition": "Nin xaakiim ah ama waayoaragnimo dheeraad ah leh.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkuhar",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "Ilmo aabihiis dhintay iyagoo uurka ku jira.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkujir",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Inta uurka ku jirta, sida: beerka, kelyaha, caloosha iwm; uusley.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkummaanle",
+    "pos": "Magac Lab (uurkummaanlayaal, Magac Lab/Dheddig)",
+    "senses": [
+      {
+        "definition": "Qof waxgaradnimo iyo caqli badan leh oo la moodo in uu la socdo waxa qofka la hadlayaa ku fekerayo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkuqaad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Illaabi waayidda la illaabi waayo wax lays yeelay. la-mid uurkusiddo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurkusiddo"
+    ]
+  },
+  {
+    "headword": "uurkusiddo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Utun iyo ciil uurka ku raaga.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkutaallaysan",
+    "pos": "Fal magudbe (uurkutaallaysnaa, uurkutaallaysnayd)",
+    "senses": [
+      {
+        "definition": "Wax uurkutaallo hayso ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkutaallaysnaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurkutaallaysan. la-mid uurkutaallaysnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurkutaallaysnaansho"
+    ]
+  },
+  {
+    "headword": "uurkutaallaysnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uurkutaallaysnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurkutaallaysnaan"
+    ]
+  },
+  {
+    "headword": "uurkutaallo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dareen iyo uurxumo gocasho ku dheehan tahay leh.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkutaalloo",
+    "pos": "Fal Magudbe (uurkutaalloooday, uurkutaalloootay)",
+    "senses": [
+      {
+        "definition": "Uurkutaallo dareemid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurkutaallood",
+    "pos": "magac Fal Lab",
+    "senses": [
+      {
+        "definition": "eeg uurkutaalloo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurmaran",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Naasley aan uurkeeda ilmo ku jirin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuro",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Boor ama qiiq madow oo kacsan.",
+        "examples": []
+      },
+      {
+        "definition": "Biyo dhoobo ku qasantahay oo aad u calawsan.",
+        "examples": []
+      },
+      {
+        "definition": "Midab xooluhu yeeshaan oo madow, guduud iyo cawl isugu dhafan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuroobid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurow.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuroowid",
+    "pos": "Magac Lab (Baayologi)",
+    "senses": [
+      {
+        "definition": "Xaalad uurqaadid, marka shahwada labku bacrimiso ukunta dheddigga dhuunta falloobiyo dhexdeda.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurow",
+    "pos": "Fal Magudbe (uuroobay, uurowday; -oobi)",
+    "senses": [
+      {
+        "definition": "Uur qaadid ama yeelasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurqaad",
+    "pos": "Magac Lab/Dheddig Khabar",
+    "senses": [
+      {
+        "definition": "uurqaad ah: gaaridda neef dheddig uu gaaro da'uu ku rimi karo; awrqaad. la-mid awrqaad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "awrqaad"
+    ]
+  },
+  {
+    "headword": "uurrays",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Dabaggaalle.",
+        "examples": []
+      },
+      {
+        "definition": "Ubad geel ama dad oo diifeysan ama korriimmadii ka xumaatay.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uursamaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uursan. la-mid uursa-maansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uursa-maansho"
+    ]
+  },
+  {
+    "headword": "uursamaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uursamaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uursamaan"
+    ]
+  },
+  {
+    "headword": "uursami",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dabci wanaagsan oo qof leeyahay oo u diida in uu xumaan uurka ku hayo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uursan",
+    "pos": "Fal magudbe (uursamaa, uursamayd)",
+    "senses": [
+      {
+        "definition": "Qof uurfiyow ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurweynaad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Cudur dadka ku dhaca oo beeryarada barariya, uurkana weyneeya. la-mid caloolweynad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "caloolweynad"
+    ]
+  },
+  {
+    "headword": "uurxaad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Geednagaar dooxooyinka ka baxa oo xooluhu daaqaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurxaaran",
+    "pos": "Fal magudbe (uurxaarnaa, uurxaarnayd)",
+    "senses": [
+      {
+        "definition": "Qof aan cidna xumaan qalbiga ugu hayn ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uurxaarnaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurxaaran. la-mid uur-xaarnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uur-xaarnaansho"
+    ]
+  },
+  {
+    "headword": "uurxaarnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uurxaarnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurxaarnaan"
+    ]
+  },
+  {
+    "headword": "uurxumaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uurxun. la-mid uur-xumaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uur-xumaansho"
+    ]
+  },
+  {
+    "headword": "uurxumaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uurxumaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurxumaan"
+    ]
+  },
+  {
+    "headword": "uurxumi",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uurxumo.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurxumo"
+    ]
+  },
+  {
+    "headword": "uurxumo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Dabci aan wanaagsanayn oo qof leeyahay oo u diida in uu illaabo waxa loo geysto. la-mid uurxumi.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uurxumi"
+    ]
+  },
+  {
+    "headword": "uurxun",
+    "pos": "Fal magudbe (uurxumaa, uurxumayd)",
+    "senses": [
+      {
+        "definition": "Qof aan cidna sama ka filaneyn ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuryaal",
+    "pos": "Magac Lab (uuryaallo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Xanuunka ay ummushu dareento marka ilmasidaheedu isku soo uruurayo.",
+        "examples": []
+      },
+      {
+        "definition": "Uurjiif.",
+        "examples": []
+      },
+      {
+        "definition": "Wax indhuhu aanay qaban karin.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuryaro",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Uur aan caloosha ka muuqan wallacna dhaafay; bilayaro.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uus",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "Cunnada nafaqada laga baxay oo ku jirta caloosha iyo xiidmaha (xoolaha daaqa).",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuslaho",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uusley.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusley"
+    ]
+  },
+  {
+    "headword": "uusley",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Caloosha xoolo daaqa; uuskujir. la-mid uuslaho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uuslaho"
+    ]
+  },
+  {
+    "headword": "uusmiir",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uusmiirid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiirid"
+    ]
+  },
+  {
+    "headword": "uusmiir",
+    "pos": "Fal Gudbe (uusmiiray, uusmiirtay)",
+    "senses": [
+      {
+        "definition": "Neef geel ah oo la qalay calooshiisa biyo ka miirid.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uusmiirad",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "la-mid uusmiirasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiirasho"
+    ]
+  },
+  {
+    "headword": "uusmiiran",
+    "pos": "Fal Magudbe (uusmiirmay, uusmiirantay)",
+    "senses": [
+      {
+        "definition": "Wax la uusmiiray noqosho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uusmiiran",
+    "pos": "Fal magudbe (uusmiirnaa, uusmiirnayd)",
+    "senses": [
+      {
+        "definition": "Wax la uusmiiray ahaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uusmiirasho",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uusmiiro. la-mid uusmiirad.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiirad"
+    ]
+  },
+  {
+    "headword": "uusmiirid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uusmiir. la-mid uusmiir.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiir"
+    ]
+  },
+  {
+    "headword": "uusmiirmid",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uusmiiran.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uusmiirnaan",
+    "pos": "Magac Fal Dheddig",
+    "senses": [
+      {
+        "definition": "eeg uusmiiran. la-mid uusmiirnaansho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiirnaansho"
+    ]
+  },
+  {
+    "headword": "uusmiirnaansho",
+    "pos": "Magac Lab/Dheddig",
+    "senses": [
+      {
+        "definition": "la-mid uusmiirnaan.",
+        "examples": []
+      }
+    ],
+    "cross_refs": [
+      "uusmiirnaan"
+    ]
+  },
+  {
+    "headword": "uusmiiro",
+    "pos": "Fal Gudbe (uusmiirtay, uusmiiratay)",
+    "senses": [
+      {
+        "definition": "Neef geel ah oo la qalay calooshiisa biyo ka miirasho.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uusxabaal",
+    "pos": "Magac Lab (uusxabaallo, Magac Dheddig)",
+    "senses": [
+      {
+        "definition": "Qof tuug ah oo ariga uu qasho hilibkiisa inta uu cuno mooyaane inta kale qarsha.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uuyo",
+    "pos": "Magac Dheddig",
+    "senses": [
+      {
+        "definition": "Meesha sagaaradu saaladeeda ku uruuriso.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  },
+  {
+    "headword": "uyaal",
+    "pos": "Magac Lab",
+    "senses": [
+      {
+        "definition": "magacuyaal.",
+        "examples": []
+      }
+    ],
+    "cross_refs": []
+  }
+]

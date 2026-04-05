@@ -41,10 +41,10 @@ next-env.d.ts
 
 # local data and virtual environments
 venv/
-words/
-corrected_words/
-clean_json/
 *.csv
+corrected_words/[a-zA-Z].csv
+words/[a-zA-Z].csv
+clean_json/[a-zA-Z].json
 
 # Python cache
 __pycache__/

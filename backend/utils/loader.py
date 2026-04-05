@@ -121,6 +121,6 @@ def verify_data():
 
 
 if __name__ == "__main__":
-    setup_database()
-    load_data_in_transaction()
+    # setup_database()
+    # load_data_in_transaction()
     verify_data()
