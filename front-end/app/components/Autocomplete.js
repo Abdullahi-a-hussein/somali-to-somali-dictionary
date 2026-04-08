@@ -93,8 +93,8 @@ export default function Autocomplete() {
                 id={`suggestion-${i}`}
                 role="option"
                 aria-selected={i === highlight}
-                className={`ml-3 pt-2 pb-2 cursor-pointer text-[var(--foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
-                  i === highlight ? "bg-blue-600 text-[var(--foreground)]" : ""
+                className={`ml-3 py-2 px-4 rounded-2xl cursor-pointer text-[var(--foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
+                  i === highlight ? "bg-blue-500 text-[var(--foreground)]" : ""
                 }`}
                 onMouseDown={() => handleSelect(wordData)}
               >
