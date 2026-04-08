@@ -83,7 +83,7 @@ export default function Autocomplete() {
         {/* Suggestions */}
         {isListboxOpen && (
           <ul
-            className="absolute z-10 w-full  mt-4 p-4 tracking-wider rounded-md bg-[var(--background-second)] shadow-lg"
+            className="absolute z-10 w-full  mt-4 py-4 tracking-wider rounded-md bg-[var(--background-second)] shadow-lg"
             role="listbox"
             id="suggestions-listbox"
           >
@@ -93,8 +93,10 @@ export default function Autocomplete() {
                 id={`suggestion-${i}`}
                 role="option"
                 aria-selected={i === highlight}
-                className={`ml-3 py-2 px-4 rounded-2xl cursor-pointer text-[var(--foreground)] hover:bg-blue-500 hover:text-[var(--foreground)] ${
-                  i === highlight ? "bg-blue-500 text-[var(--foreground)]" : ""
+                className={`ml-3 py-2 px-4 rounded-2xl cursor-pointer text-[var(--foreground)] font-mono hover:bg-[#8d8d8d] hover:text-[var(--foreground)] ${
+                  i === highlight
+                    ? "bg-[#b5b5b5] text-[var(--foreground)] shadow-lg"
+                    : ""
                 }`}
                 onMouseDown={() => handleSelect(wordData)}
               >
