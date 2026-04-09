@@ -1,7 +1,6 @@
 import os
 import sqlite3
 import json
-from pydantic import BaseModel
 from .schemas import Entry, Sense
 import logging
 
@@ -19,7 +18,7 @@ SENSES = "senses"
 EXAMPLES = "examples"
 CROSS_REFS = "cross_refs"
 
-# Other table
+# Other table for source of truth. 
 QAAMUUS_TABLE = "qaamuus"
 
 # datatypes
