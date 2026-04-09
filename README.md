@@ -22,6 +22,7 @@ It transforms unstructed, old noisy dictionary sources (PDFs/text/) into queryab
 
 ## Architecture
 
+```
 Raw Dictionary (PDF / Text / manually entered examples)
 ​​​​​​​⠀⠀⠀⠀⠀⠀⠀⠀​↓
 Parsing & Cleaning Scripts
@@ -33,6 +34,13 @@ SQLite Database
 FastAPI Backend
 ⠀⠀⠀⠀⠀⠀⠀⠀↓
 Next.js Frontend (Proxy Layer)
+```
+
+This will be the chain of processing, once a request is made by the user.
+
+`Frontend → API → Database → Data Pipeline`
+
+The UI sends the user input to the proxy layer. The proxy layer sends the query and API key to the backend routes. the backend routes goes into data layer and retrieves the data. Thre process is reversed until the user receives the data in the UI.
 
 ## Components
 
