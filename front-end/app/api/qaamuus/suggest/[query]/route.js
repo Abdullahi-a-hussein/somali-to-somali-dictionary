@@ -11,21 +11,19 @@ export async function GET(request, { params }) {
         "x-api-key": API_KEY,
       },
     });
-
     if (!response.ok) {
       return NextResponse.json(
         { error: "Backend API error" },
-        { status: response.status }
+        { status: response.status },
       );
     }
-
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error) {
     console.error("Internal proxy error:", error);
     return NextResponse.json(
       { error: "Internal Server Error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

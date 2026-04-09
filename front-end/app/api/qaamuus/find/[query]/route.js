@@ -6,7 +6,7 @@ export async function GET(request, { params }) {
   const API_KEY = process.env.API_KEY;
 
   try {
-    const link = `${API_URL}/qaamuus/clean/find/${query}`;
+    const link = `${API_URL}/qaamuus/find/${query}`;
     const response = await fetch(link, {
       headers: {
         "x-api-key": API_KEY,

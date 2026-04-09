@@ -40,7 +40,7 @@ export function useDebouncedSuggestFetch(fetcher, query, delay = 300) {
   return { data, loading };
 }
 
-export function useDebouncedFindFetch(fetcher, query, delay = 300) {
+export function useFindFetch(fetcher, query) {
   const [entries, setEntries] = useState([]);
   const [fetching, setFetching] = useState(false);
 
@@ -50,27 +50,34 @@ export function useDebouncedFindFetch(fetcher, query, delay = 300) {
       setFetching(false);
       return;
     }
-    const controlller = new AbortController();
-    const { signal } = controlller;
-    setFetching(true);
 
-    const timer = setTimeout(async () => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
+    async function runFetch() {
+      setFetching(true);
+
       try {
         const response = await fetcher(query, signal);
         setEntries(response || []);
       } catch (error) {
         if (error.name !== "AbortError") {
-          console.error("Fetch Failed: ", error);
+          console.error("Fetch failed:", error);
+          setEntries([]);
         }
-        setEntries([]);
       } finally {
-        setFetching(false);
+        if (!signal.aborted) {
+          setFetching(false);
+        }
       }
-    }, delay);
+    }
+
+    runFetch();
+
     return () => {
-      clearTimeout(timer);
-      controlller.abort;
+      controller.abort();
     };
-  }, [query, delay, fetcher]);
+  }, [query, fetcher]);
+
   return { entries, fetching };
 }

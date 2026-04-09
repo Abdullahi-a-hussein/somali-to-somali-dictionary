@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { getPrefixes, getSelected } from "../server-actions/server-action";
 import {
-  useDebouncedFindFetch,
+  useFindFetch,
   useDebouncedSuggestFetch,
 } from "../hooks/useDebouncedFetch";
 import Entry from "./Entry";
@@ -20,7 +20,7 @@ export default function Autocomplete() {
     250,
   );
 
-  const { entries } = useDebouncedFindFetch(getSelected, selectedWord, 50);
+  const { entries } = useFindFetch(getSelected, selectedWord, 50);
 
   const isListboxOpen =
     suggestions.length > 0 && (!selectedWord || query !== selectedWord);

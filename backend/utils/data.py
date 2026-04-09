@@ -1,16 +1,20 @@
 import os
 import sqlite3
 import json
-from .schemas import Entry, Sense
+from rapidfuzz import fuzz
 import logging
+
+# local imports
+from .schemas import Entry, Sense
 
 # File internal file logger
 logger = logging.getLogger(__name__)
 
+CLEAN_JSON_DATA = "clean_json"
 DB_FILE = "qaamuus.db"
 
 # Path to all the files that need to be written to the database
-PATHS = [f"clean_json/{entry}" for entry in os.listdir("clean_json")]
+PATHS = [f"{CLEAN_JSON_DATA}/{entry}" for entry in os.listdir(CLEAN_JSON_DATA)]
 
 # Tables names
 ENTRIES = "entries"
@@ -18,11 +22,13 @@ SENSES = "senses"
 EXAMPLES = "examples"
 CROSS_REFS = "cross_refs"
 
-# Other table for source of truth. 
-QAAMUUS_TABLE = "qaamuus"
 
-# datatypes
-
+#normalization helper
+def normalize_text(text: str) -> str:
+    """
+    Normalizes <text> to all be lowercase letters and splits on spaces
+    """
+    return " ".join(text.strip().lower().split())
 
 def connect_to_db(db_name: str) -> sqlite3.Connection:
     logger.info("Connecting to database")
@@ -278,18 +284,13 @@ def verify_data_load():
         )
         refs_total = cursor.fetchone()[0]
 
-        # Total rows in qaamuus table
-        cursor.execute(
-            f"SELECT COUNT(*) FROM {QAAMUUS_TABLE};"
-        )
-        qaamuus_total = cursor.fetchone()[0]
+      
 
         totals = f"""
             total rows in ENTRIES table: {ENTRIES_total}\n
             total rows in sense table: {senses_total}\n
             total rows in examples table: {examples_total}\n
             total rows in cross_refs table: {refs_total}\n
-            total rows in qaamuus table: {qaamuus_total}
             """
         print(totals)
     except sqlite3.Error as e:
@@ -312,7 +313,7 @@ def find_word(headword: str) -> list[Entry]:
         cursor.execute(
             f"""
             SELECT id, headword, pos FROM {ENTRIES}
-            WHERE headword = ?
+            WHERE lower(headword) = lower(?)
             ORDER BY id
             """,
             (headword,)
@@ -394,32 +395,150 @@ def get_refs(cursor: sqlite3.Cursor, entry: Entry, entry_id: int) -> None:
         raise
 
 
-def get_starting_at(prefix: str) -> list[str]:
+# fetches a reasonable pool from SQLit database
+
+def fetch_primary_candidates(query: str, limit: int = 20) -> list[tuple[int, str]]:
     connection = None
     try:
         connection = connect_to_db(DB_FILE)
         cursor = connection.cursor()
+
+        normalized_query = normalize_text(query)
+
         cursor.execute(
             f"""
-            SELECT DISTINCT headword FROM {ENTRIES}
-            WHERE headword LIKE ?
-            ORDER BY id, headword
-            LIMIT 10
+            SELECT id, headword
+            FROM {ENTRIES}
+            WHERE lower(headword) = ?
+               OR lower(headword) LIKE ?
+            ORDER BY
+                CASE
+                    WHEN lower(headword) = ? THEN 0
+                    WHEN lower(headword) LIKE ? THEN 1
+                    ELSE 2
+                END,
+                headword
+            LIMIT ?
             """,
-            (f"{prefix}%",)
+            (
+                normalized_query,
+                f"{normalized_query}%",
+                normalized_query,
+                f"{normalized_query}%",
+                limit,
+            ),
         )
-        headwords = cursor.fetchall()
-        return [row[0] for row in headwords]
-        pass
+
+        return cursor.fetchall()
+
     except sqlite3.Error:
-        logger.exception("Database Error while finding prefix: %s", prefix)
+        logger.exception("Database error while fetching primary candidates: %s", query)
         return []
     finally:
         if connection:
             connection.close()
 
+def fetch_contains_candidates(query: str, limit: int = 20) -> list[tuple[int, str]]:
+    connection = None
+    try:
+        connection = connect_to_db(DB_FILE)
+        cursor = connection.cursor()
 
-if __name__ == "__main__":
-    # setup()
-    # load_data()
-    verify_data_load()
+        normalized_query = normalize_text(query)
+
+        cursor.execute(
+            f"""
+            SELECT id, headword
+            FROM {ENTRIES}
+            WHERE lower(headword) LIKE ?
+            ORDER BY headword
+            LIMIT ?
+            """,
+            (
+                f"%{normalized_query}%",
+                limit,
+            ),
+        )
+
+        return cursor.fetchall()
+
+    except sqlite3.Error:
+        logger.exception("Database error while fetching contains candidates: %s", query)
+        return []
+    finally:
+        if connection:
+            connection.close()
+            
+
+    
+# Ranking function
+def score_headword(query: str, headword: str) -> float:
+    """
+    Ranks <query> on how closely it matches with <headword>. 
+    The more <query> resembles the <headword>, the higher the score.
+    """
+    q = normalize_text(query)
+    h = normalize_text(headword)
+    
+    base_score = 0
+    
+    if h == q:
+        base_score = 100
+    elif h.startswith(q):
+        base_score = 80
+    elif q in h:
+        base_score = 60
+    fuzzy_bonus = fuzz.ratio(q, h) * 0.4
+    return base_score + fuzzy_bonus
+
+
+# suggest headwods 
+def suggest_headwords(query: str, top_n: int = 10) -> list[str]:
+    """
+    returns the <top_n> words that closest ressemble query from the database
+    
+    Parameters
+    ----------
+    query: string
+           string to be searched and matched on the database
+    top_n: integer
+           The number of matches to be returned from the database that match the query
+    
+    Returns
+    -------
+    list of strings || empty list
+           returns a list of all the matches for the <query> or 
+           empty list if no match is found
+    """
+    if not query or not query.strip():
+        return []
+
+    normalized_query = normalize_text(query)
+    primary_candidates = fetch_primary_candidates(normalized_query, limit=top_n)
+
+    results = []
+    seen = set()
+
+    for _, headword in primary_candidates:
+        if headword not in seen:
+            seen.add(headword)
+            results.append(headword)
+        if len(results) == top_n:
+            return results
+
+    if len(normalized_query) <= 2:
+        return results
+
+    remaining = top_n - len(results)
+    fallback_candidates = fetch_contains_candidates(normalized_query, limit=remaining * 3)
+
+    for _, headword in fallback_candidates:
+        if headword not in seen:
+            seen.add(headword)
+            results.append(headword)
+        if len(results) == top_n:
+            break
+
+    return results
+
+
