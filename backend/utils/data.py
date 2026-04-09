@@ -3,6 +3,7 @@ import sqlite3
 import json
 from rapidfuzz import fuzz
 import logging
+from functools import lru_cache
 
 # local imports
 from .schemas import Entry, Sense
@@ -163,6 +164,8 @@ def load_data():
     Loads data from all the json files in <PATHS> into the database
     within a single transaction.
     """
+    # Clear if any cached data since we are changing the database.
+    clear_suggestion_cache()
     print("\nStarting data loading process...")
 
     connection = None
@@ -396,7 +399,6 @@ def get_refs(cursor: sqlite3.Cursor, entry: Entry, entry_id: int) -> None:
 
 
 # fetches a reasonable pool from SQLit database
-
 def fetch_primary_candidates(query: str, limit: int = 20) -> list[tuple[int, str]]:
     connection = None
     try:
@@ -493,7 +495,7 @@ def score_headword(query: str, headword: str) -> float:
 
 
 # suggest headwods 
-def suggest_headwords(query: str, top_n: int = 10) -> list[str]:
+def _suggest_headwords(query: str, top_n: int = 10) -> list[str]:
     """
     returns the <top_n> words that closest ressemble query from the database
     
@@ -540,5 +542,17 @@ def suggest_headwords(query: str, top_n: int = 10) -> list[str]:
             break
 
     return results
+
+@lru_cache(maxsize=2048)
+def _suggest_headwords_cached(query: str, top_n: int = 10) -> tuple[str, ...]:
+    result = _suggest_headwords(query, top_n=top_n)
+    return tuple(result)
+
+def clear_suggestion_cache() -> None:
+    _suggest_headwords_cached.cache_clear()
+
+def suggest_headwords(query: str, top_n: int=10) -> list[str]:
+    normalized_query = normalize_text(query)
+    return list(_suggest_headwords_cached(normalized_query, top_n))
 
 
