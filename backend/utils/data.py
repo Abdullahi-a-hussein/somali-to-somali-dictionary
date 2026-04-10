@@ -555,4 +555,5 @@ def suggest_headwords(query: str, top_n: int=10) -> list[str]:
     normalized_query = normalize_text(query)
     return list(_suggest_headwords_cached(normalized_query, top_n))
 
-
+if __name__ == "__main__":
+    print(fetch_contains_candidates("ce",limit=3))
