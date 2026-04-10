@@ -8,9 +8,13 @@ import pytest
 import tempfile
 from main import app
 from utils import data
+from utils.schemas import Entry
+
 
 client = TestClient(app)
 
+SUGGEST_ROUTE = "/qaamuus/suggest/"
+FIND_ROUTE = "/qaamuus/find"
 
 
 @pytest.fixture
@@ -66,8 +70,13 @@ def test_db():
             ("ceebaal", "Magac"),
             ("ceebayn", "Magac"),
             ("macee", "Magac"),
+            ("sheeko", "Magac"),
+            ("cilmi", "Magac")
         ],
     )
+    
+    
+    cursor
 
     connection.commit()
     connection.close()
@@ -92,3 +101,49 @@ def test_suggest_headwords_integration(monkeypatch, test_db):
     results = data.suggest_headwords("ceeb", top_n=5)
     assert results[0] == "ceeb"
     assert "ceebaal" in results
+    
+# Testing routes
+
+# Testing word suggestion
+def test_suggest_route_e2e(monkeypatch, test_db):
+    monkeypatch.setattr(data, "DB_FILE", test_db)
+    data.clear_suggestion_cache()
+    test_word = "sheek"
+    response = client.get(f"{SUGGEST_ROUTE}/{test_word}")
+    assert response.status_code == 200
+    payload = response.json()
+    
+    assert isinstance(payload, list)
+    assert isinstance(payload[0], str)
+    assert "sheeko" in payload
+    
+# Testing find word route
+
+def test_find_route_e2e(monkeypatch, test_db):
+    monkeypatch.setattr(data, "DB_FILE", test_db)
+
+    test_word = "cilmi"
+    response = client.get(f"{FIND_ROUTE}/{test_word}")
+
+    assert response.status_code == 200
+
+    payload = response.json()
+
+    assert isinstance(payload, list)
+    assert len(payload) > 0
+
+    entries = [Entry(**item) for item in payload]
+
+    entry = entries[0]
+
+    assert isinstance(entry.senses, list)
+    assert isinstance(entry.cross_refs, list)
+
+    # validate full schema
+    assert entries[0].model_dump() == {
+        "headword": "cilmi",
+        "pos": "Magac",
+        "senses": [...],
+        "cross_refs": []
+}
+     
