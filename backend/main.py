@@ -1,10 +1,9 @@
 import os
 from dotenv import load_dotenv
-import json
-import redis
 from fastapi import FastAPI, Header, HTTPException
-from rapidfuzz import process, fuzz
-from logger_config import setup_logging
+import time
+from logger_config import setup_logging, logging
+
 
 from utils.data import find_word, connect_to_db, suggest_headwords
 
@@ -16,6 +15,9 @@ setup_logging()
 # Load environment variables
 load_dotenv()
 
+# Logger instance
+logger = logging.getLogger(__name__)
+
 DATABASE_FILE = os.getenv("DATABASE_FILE", "qaamuus.db")
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 # secret key shared with Next.js
@@ -26,13 +28,13 @@ ENV = os.getenv("ENV")
 app = FastAPI(title="Qaamuus API", version="1.0.0")
 
 # --- Redis Setup ---
-try:
-    redis_client = redis.from_url(REDIS_URL, decode_responses=True)
-    redis_client.ping()
-    print("✅: Connected to Redis.")
-except redis.exceptions.ConnectionError as e:
-    print(f"⚠️: Redis connection failed: {e}")
-    redis_client = None
+# try:
+#     redis_client = redis.from_url(REDIS_URL, decode_responses=True)
+#     redis_client.ping()
+#     print("✅: Connected to Redis.")
+# except redis.exceptions.ConnectionError as e:
+#     print(f"⚠️: Redis connection failed: {e}")
+#     redis_client = None
 
 # --- Utility ---
 
@@ -61,13 +63,39 @@ def health(x_api_key: str = Header(None)):
 
 @app.get("/qaamuus/find/{word}")
 def find_entry(word: str, x_api_key: str = Header(None)):
+    logger.info("Find request", extra={
+        "word": word
+    })
+    
     if not (ENV == "development"):
         verify_internal_key(x_api_key)
-    return find_word(word)
+    start = time.time()
+    result = find_word(word)
+    duration = time.time() - start
+    logger.info("Find Completed", extra= {
+        "word": word,
+        "duration_ms": round(duration * 1000, 2),
+        "result_length": len(result)
+    })
+    return result
 
 
 @app.get("/qaamuus/suggest/{prefix}")
 def get_prefex(prefix: str, x_api_key: str = Header(None)):
+    
+    logger.info("Suggest request", extra={
+        "prefix": prefix,
+    })
+    
     if not (ENV == "development"):
         verify_internal_key(x_api_key)
-    return suggest_headwords(prefix, top_n=10)
+    start = time.time()
+    result = suggest_headwords(prefix, top_n=10)
+    duration = time.time() - start
+    timer = round(duration * 1000, 2)
+    logger.info("Suggest completed", extra={
+        "prefix": prefix,
+        "duration_ms": timer,
+        "results": len(result)
+    })
+    return result

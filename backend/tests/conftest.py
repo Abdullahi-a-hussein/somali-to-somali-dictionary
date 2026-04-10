@@ -1,25 +1,17 @@
-# tests/conftest.py
-import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import sqlite3
-from fastapi.testclient import TestClient
-import pytest
 import tempfile
+
+import pytest
+from fastapi.testclient import TestClient
+
 from main import app
 from utils import data
-from utils.schemas import Entry
-
-
-client = TestClient(app)
-
-SUGGEST_ROUTE = "/qaamuus/suggest/"
-FIND_ROUTE = "/qaamuus/find"
 
 
 @pytest.fixture
 def test_db():
-    db_fd, db_path = tempfile.mkstemp()
+    db_fd, db_path = tempfile.mkstemp(suffix=".db")
 
     connection = sqlite3.connect(db_path)
     connection.execute("PRAGMA foreign_keys = ON")
@@ -30,7 +22,7 @@ def test_db():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             headword TEXT NOT NULL,
             pos TEXT NOT NULL
-        )
+        );
     """)
 
     cursor.execute("""
@@ -40,7 +32,7 @@ def test_db():
             sense_order INTEGER NOT NULL,
             definition TEXT NOT NULL,
             FOREIGN KEY (entry_id) REFERENCES entries(id) ON DELETE CASCADE
-        )
+        );
     """)
 
     cursor.execute("""
@@ -50,7 +42,7 @@ def test_db():
             example_order INTEGER NOT NULL,
             example_text TEXT NOT NULL,
             FOREIGN KEY (sense_id) REFERENCES senses(id) ON DELETE CASCADE
-        )
+        );
     """)
 
     cursor.execute("""
@@ -60,90 +52,103 @@ def test_db():
             ref_order INTEGER NOT NULL,
             ref_text TEXT NOT NULL,
             FOREIGN KEY (entry_id) REFERENCES entries(id) ON DELETE CASCADE
-        )
+        );
     """)
 
-    cursor.executemany(
+    cursor.execute("CREATE INDEX idx_entries_headword ON entries(headword);")
+    cursor.execute("CREATE INDEX idx_senses_entry_id_sense_order ON senses(entry_id, sense_order);")
+    cursor.execute("CREATE INDEX idx_examples_sense_id_example_order ON examples(sense_id, example_order);")
+    cursor.execute("CREATE INDEX idx_cross_refs_entry_id_ref_order ON cross_refs(entry_id, ref_order);")
+
+    # Entry 1: cilmi
+    cursor.execute(
         "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("cilmi", "Magac")
+    )
+    cilmi_entry_id = cursor.lastrowid
+
+    cursor.execute(
+        "INSERT INTO senses (entry_id, sense_order, definition) VALUES (?, ?, ?)",
+        (cilmi_entry_id, 1, "Aqoon iyo barasho.")
+    )
+    cilmi_sense_1_id = cursor.lastrowid
+
+    cursor.executemany(
+        "INSERT INTO examples (sense_id, example_order, example_text) VALUES (?, ?, ?)",
         [
-            ("ceeb", "Magac"),
-            ("ceebaal", "Magac"),
-            ("ceebayn", "Magac"),
-            ("macee", "Magac"),
-            ("sheeko", "Magac"),
-            ("cilmi", "Magac")
+            (cilmi_sense_1_id, 1, "Cilmi waa iftiin."),
+            (cilmi_sense_1_id, 2, "Wuxuu raadinayaa cilmi badan."),
         ],
     )
-    
-    
-    cursor
+
+    cursor.execute(
+        "INSERT INTO senses (entry_id, sense_order, definition) VALUES (?, ?, ?)",
+        (cilmi_entry_id, 2, "Wax la barto ama la fahmo.")
+    )
+    cilmi_sense_2_id = cursor.lastrowid
+
+    cursor.execute(
+        "INSERT INTO examples (sense_id, example_order, example_text) VALUES (?, ?, ?)",
+        (cilmi_sense_2_id, 1, "Cilmigu bulshada ayuu horumariyaa.")
+    )
+
+    cursor.executemany(
+        "INSERT INTO cross_refs (entry_id, ref_order, ref_text) VALUES (?, ?, ?)",
+        [
+            (cilmi_entry_id, 1, "aqoon"),
+            (cilmi_entry_id, 2, "garasho"),
+        ],
+    )
+
+    # Entry 2: cilmibaare
+    cursor.execute(
+        "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("cilmibaare", "Magac")
+    )
+
+    # Entry 3: cilmi-nafsi
+    cursor.execute(
+        "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("cilmi-nafsi", "Magac")
+    )
+
+    # Entry 4: macalin
+    cursor.execute(
+        "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("macalin", "Magac")
+    )
+
+    # Entry 5: cilmi with second POS, to test same headword multiple entries
+    cursor.execute(
+        "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("cilmi", "Fal")
+    )
+    cilmi_entry_2_id = cursor.lastrowid
+
+    cursor.execute(
+        "INSERT INTO senses (entry_id, sense_order, definition) VALUES (?, ?, ?)",
+        (cilmi_entry_2_id, 1, "Wax la xiriira cilmi raadis.")
+    )
+
+    # Entry 6: contains-only fallback candidate
+    cursor.execute(
+        "INSERT INTO entries (headword, pos) VALUES (?, ?)",
+        ("barcilmi", "Magac")
+    )
 
     connection.commit()
     connection.close()
 
-    yield db_path
+    try:
+        yield db_path
+    finally:
+        os.close(db_fd)
+        os.remove(db_path)
 
-    os.close(db_fd)
-    os.remove(db_path)
-    
-def test_prefix_query_integration(monkeypatch, test_db):
-    #override DB patch
+
+@pytest.fixture
+def client(test_db, monkeypatch):
     monkeypatch.setattr(data, "DB_FILE", test_db)
-    results = data.fetch_primary_candidates("ce", limit=10)
-    headwords = [row[1] for row in results]
-    assert "ceeb" in headwords
-    assert "ceebaal" in headwords
-    assert "ceebayn" in headwords
-    
-def test_suggest_headwords_integration(monkeypatch, test_db):
-    monkeypatch.setattr(data, "DB_FILE", test_db)
-    
-    results = data.suggest_headwords("ceeb", top_n=5)
-    assert results[0] == "ceeb"
-    assert "ceebaal" in results
-    
-# Testing routes
-
-# Testing word suggestion
-def test_suggest_route_e2e(monkeypatch, test_db):
-    monkeypatch.setattr(data, "DB_FILE", test_db)
-    data.clear_suggestion_cache()
-    test_word = "sheek"
-    response = client.get(f"{SUGGEST_ROUTE}/{test_word}")
-    assert response.status_code == 200
-    payload = response.json()
-    
-    assert isinstance(payload, list)
-    assert isinstance(payload[0], str)
-    assert "sheeko" in payload
-    
-# Testing find word route
-
-def test_find_route_e2e(monkeypatch, test_db):
-    monkeypatch.setattr(data, "DB_FILE", test_db)
-
-    test_word = "cilmi"
-    response = client.get(f"{FIND_ROUTE}/{test_word}")
-
-    assert response.status_code == 200
-
-    payload = response.json()
-
-    assert isinstance(payload, list)
-    assert len(payload) > 0
-
-    entries = [Entry(**item) for item in payload]
-
-    entry = entries[0]
-
-    assert isinstance(entry.senses, list)
-    assert isinstance(entry.cross_refs, list)
-
-    # validate full schema
-    assert entries[0].model_dump() == {
-        "headword": "cilmi",
-        "pos": "Magac",
-        "senses": [...],
-        "cross_refs": []
-}
-     
+    if hasattr(data, "clear_suggestion_cache"):
+        data.clear_suggestion_cache()
+    return TestClient(app)
